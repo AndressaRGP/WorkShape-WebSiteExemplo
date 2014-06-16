@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <title> Login </title>
+    <meta charset = "UTF-8">
+</head>
 <body style="background:#CCEEFF">
     
 <h1> <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </h1>
-
-<p> Sign In: </p>
-
+<!-- Facebook Login Button-->
+<script type="scripts/facebookLogin.js"></script>
+<fb: login-button scope="public_profile,email" onlogin ="checkLoginState();">
+</fb:login-button>
+<div id = "status">
+</div>  
 </body>
 </html>
