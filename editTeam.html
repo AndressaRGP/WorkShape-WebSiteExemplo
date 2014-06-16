@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+    
+<h1> <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</h1>
+
+<p> Login to edit your team Group: </p>
+
+<form id="login_Team" method ="get" >
+
+<p>
+Team Name: <input id = "teamName" type="text" name ="teamName" value "" size ="25" maxlength = "60"
+    </p>
+    <p>
+Team ID : <input id ="teamID" type = "text" name ="teamID" value = " " size="10" maxlength = "10"
+    </p>
+    <p>
+    
+  <INPUT type="submit" onclick="loginTeam()" name='submit' value ='Login'/>
+      </p>
+<script src="scripts/editTeam.js"></script>
+
+</form>
+
+<form id="add_Emails" method ="put" >
+    
+    <textarea rows="5" cols="50" name="teamDescription">Put the emails here...
+        </textarea>
+        
+            <p>
+            
+            <INPUT type="submit" onclick="editTeam()" name='Submit' value ='Save Edition '/>
+            </p>
+            
+            
+</form>
+
+
+<script src="scripts/editTeam.js"></script>
+
+</body>
+</html>
