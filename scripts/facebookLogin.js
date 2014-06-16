@@ -1,5 +1,5 @@
-function loginFacebook()
-{
+//function loginFacebook()
+//{
     ////Thi is called with the results from FB.getLoginStatus().
 
     function statusChangeCallback(response){
@@ -30,8 +30,7 @@ function loginFacebook()
 //See the onlogin handler attached to it in the sample code below
 
 function checkLoginState () {
-    FB.getLoginStatus(function(reponse)
-    {
+    FB.getLoginStatus(function(reponse){
         statusChangeCallback(reponse);
     });
 }
