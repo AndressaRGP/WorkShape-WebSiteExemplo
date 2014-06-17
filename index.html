@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head> 
+    <title> WORKSHAPE</title>
+    <meta charset="UTF-8">
 <link href="css/background.css" rel="stylesheet" type="text/css"> 
 </head>
 <body>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
+    <script src="scripts/facebookLogin.js"></script>
     <div class='wrapper'>
         <img class="background-cloud cloud1" src="images/cloud.png">
         <img class="background-cloud cloud2" src="images/cloud.png">
         <img class="background-cloud cloud3" src="images/cloud.png">
         <img class="logo" src="images/logo.png">
     </div>
+    
     <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
     </fb:login-button>
 
@@ -19,7 +22,6 @@
 </div>
  
 
-<script src="scripts/createTeam.js"></script>
 
 
 

@@ -5,13 +5,11 @@
 
         console.log('statusChangeCallback');
         console.log(response); //reponse object let the app knows the current person's status
-        if(reponse.status == 'connected')
-        {
+        if(reponse.status === 'connected'){
             //Logged into the app
             testAPI();
 
-        }else if(response.status == 'not_authorized')
-        {
+        }else if(response.status === 'not_authorized'){
             //The person is loggef into Facebook but not in the app
             document.getElementById('status').innerHTML = 'Please log' + 
             'into this app';
@@ -29,8 +27,7 @@
 //See the onlogin handler attached to it in the sample code below
 
 function checkLoginState () {
-    FB.getLoginStatus(function(reponse)
-    {
+    FB.getLoginStatus(function(reponse) {
         statusChangeCallback(reponse);
     });
 }
@@ -73,10 +70,10 @@ window.fbAsyncInit = function(){
 //Here its a test of the Graph API after login is successful
 function testAPI(){
 console.log('Welcome! Fetching your information...');
-FB.api('/me', fnction(response){
-    console.log('Successful login for:' + reponse.name);
+FB.api('/me', function(response){
+    console.log('Successful login for:' + response.name);
     document.getElementById('status').innerHTML = 
-    'thanks for logging in,' + reponse.name + '!';
+    'thanks for logging in,' + response.name + '!';
 });
 
 }
