@@ -1,0 +1,41 @@
+body{
+	background-color:  #CCEEFF;
+	position: relative;
+}
+
+.wrapper {
+	position: relative;
+	width: 800px;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+.background-cloud {
+	position: absolute;
+	width: 400px;
+	z-index: -1;
+}
+.cloud1 {
+	left: -200px;
+	top: 100px;
+	width: 250px;
+}
+.cloud2 {
+	right: -200px;
+	top: 50px;
+	width: 350px;
+}
+.cloud3 {
+	right: 200px;
+	bottom: -250px;
+	width: 350px;
+}
+
+.logo{
+	position: relative;
+	width: 400px;
+	display: block;
+	margin-right: auto;
+	top: 300px;
+	margin-left:700px;
+}
