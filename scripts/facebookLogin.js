@@ -15,7 +15,7 @@
         console.log(response); //reponse object let the app knows the current person's status
         if(response.status === "connected"){
             //Logged into the app
-            testAPI();
+            loginFacebook();
 
         }else if(response.status === 'not_authorized'){
             //The person is loggef into Facebook but not in the app
@@ -76,7 +76,7 @@ window.fbAsyncInit = function(){
 }(document,'script', 'facebook-jssdk'));
 
 //Here its a test of the Graph API after login is successful
-function testAPI(){
+function loginFacebook(){
 console.log('Welcome! Fetching your information...');
 FB.api('/me', function(response){
     console.log('Successful login for:' + response.name);
@@ -85,4 +85,26 @@ FB.api('/me', function(response){
 });
 
 }
+
+
+//post request, create user or log in 
+
+function loginWorkshape(fbUID){
+
+        
+                         $.ajax({
+                                type: "POST",
+                                url: "http://192.168.0.12:9000/users",
+                                data: fbUID,  // falar o que esta enviando
+                                success: function() {
+                                window.location.href='createTeam.html'
+                                }
+                                });
+                         });
+
+
+
+}
+
+
 
