@@ -23,7 +23,7 @@ function checkInput(){
                                 url: "http://192.168.0.12:9000/team/"+sessionID,
                                 data: $(this).serialize(),
                                 success: function() {
-                                window.location.href='teamCreated.html'
+                                //window.location.href='teamCreated.html'
                                 }
                                 });
                          });
