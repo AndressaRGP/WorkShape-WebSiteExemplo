@@ -1,5 +1,7 @@
 
-    ////Thi is called with the results from FB.getLoginStatus().
+    //get the sessionID someway to send through the request
+    
+    ////This is called with the results from FB.getLoginStatus().
 
     function statusChangeCallback(response){
 

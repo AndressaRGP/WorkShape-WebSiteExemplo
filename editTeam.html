@@ -12,7 +12,7 @@
 
 <p> Login to edit your team Group: </p>
 
-<form id="login_Team" method ="get" >
+<form id="edit_Team" method ="get" >
 <input type="file" id="teamLogo"name= "teamLogo" />
 <output id ="list"></output>
     <p>Team Name: <input id = "teamName" type="text" name ="teamName" value "" size ="25" maxlength = "60"
@@ -21,7 +21,7 @@
     </p>
     <p> Charity : <input id = "teamCharity" type="text" name="teamCharity" size ="50"
     </p>
-    <p> <INPUT type="submit" onclick="loginTeam()" name='submit' value ='Login'/>
+    <p> <INPUT type="submit" onclick="editTeam()" name='submit' value ='Salve Edition'/>
    </p>
 <script src="scripts/editTeam.js"></script>
 
@@ -30,12 +30,11 @@
 <form id="add_Emails" method ="put" >
     
     <textarea rows="5" cols="50" name="teamDescription">Put the emails here...
-        </textarea>
+    </textarea>
         
-            <p>
-            
-            <INPUT type="submit" onclick="editTeam()" name='Submit' value ='Save Edition '/>
-            </p>
+        <p>
+        <INPUT type="submit" onclick="sendInvitation()" name='sendInvitationButton' value ='Send Invitation'/>
+        </p>
             
             
 </form>

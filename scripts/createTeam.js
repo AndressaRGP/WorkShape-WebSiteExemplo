@@ -13,6 +13,7 @@ function checkInput(){
     
     }else{
       //  alert("Form submited!");
+      
         
         $('#create_Team').on('submit', function(e){
                          e.preventDefault();
