@@ -13,17 +13,16 @@
 <p> Login to edit your team Group: </p>
 
 <form id="login_Team" method ="get" >
-
-<p>
-Team Name: <input id = "teamName" type="text" name ="teamName" value "" size ="25" maxlength = "60"
+<input type="file" id="teamLogo"name= "teamLogo" />
+<output id ="list"></output>
+    <p>Team Name: <input id = "teamName" type="text" name ="teamName" value "" size ="25" maxlength = "60"
     </p>
-    <p>
-Team ID : <input id ="teamID" type = "text" name ="teamID" value = " " size="10" maxlength = "10"
+    <p> Team Description : <input id = "teamDescription" type="text" name="teamDescription" size ="50"
     </p>
-    <p>
-    
-  <INPUT type="submit" onclick="loginTeam()" name='submit' value ='Login'/>
-      </p>
+    <p> Charity : <input id = "teamCharity" type="text" name="teamCharity" size ="50"
+    </p>
+    <p> <INPUT type="submit" onclick="loginTeam()" name='submit' value ='Login'/>
+   </p>
 <script src="scripts/editTeam.js"></script>
 
 </form>
