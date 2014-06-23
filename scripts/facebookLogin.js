@@ -102,7 +102,7 @@ function loginWorkshape(fbUID){
                                 window.location.href='createTeam.html'
                                 }
                                 });
-                         });
+                         
 
 
 
