@@ -12,7 +12,7 @@
 
 <p> Login to edit your team Group: </p>
 
-<form id="edit_Team" method ="get" >
+<form id="edit_Team" method ="PUT" >
 <input type="file" id="teamLogo"name= "teamLogo" />
 <output id ="list"></output>
     <p>Team Name: <input id = "teamName" type="text" name ="teamName" value "" size ="25" maxlength = "60"
@@ -27,7 +27,7 @@
 
 </form>
 
-<form id="add_Emails" method ="put" >
+<form id="add_Emails" method ="POST" >
     
     <textarea rows="5" cols="50" name="teamDescription">Put the emails here...
     </textarea>

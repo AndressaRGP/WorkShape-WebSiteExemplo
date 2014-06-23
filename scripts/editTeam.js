@@ -1,11 +1,14 @@
-function editTeam(teamID){ //how to do this int the HTML side?
+function editTeam(){ //how to do this int the HTML side?
     //Get value of input field with id ="name"
+
+    var teamID = location.query.teamID;
     var teamN= document.getElementById("teamName").value;
     var teamDescription = document.getElementById("teamDescription").value;
     var teamCharity = document.getElementById("teamCharity").value;
     var teamLogo = document.getElementById("teamLogo").value;
     
     
+    console.log(teamID)
     //If value is apace or not a number
     if((teamDescription.trim() == "") || teamID.trim() == "")
     {
