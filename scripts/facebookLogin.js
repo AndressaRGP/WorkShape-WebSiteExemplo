@@ -13,7 +13,7 @@
 
         console.log('statusChangeCallback');
         console.log(response); //reponse object let the app knows the current person's status
-        if(reponse.status === 'connected'){
+        if(reponse.status === "connected"){
             //Logged into the app
             testAPI();
 
