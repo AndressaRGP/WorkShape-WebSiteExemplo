@@ -17,9 +17,10 @@ function checkInput(){
         
         $('#create_Team').on('submit', function(e){
                          e.preventDefault();
+                         var sessionId = $.cookie("sessionId")
                          $.ajax({
                                 type: "POST",
-                                url: "http://192.168.0.12:9000/team",
+                                url: "http://192.168.0.12:9000/team/"+sessionId,
                                 data: $(this).serialize(),
                                 success: function() {
                                 window.location.href='teamCreated.html'

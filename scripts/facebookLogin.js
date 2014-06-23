@@ -98,8 +98,10 @@ function loginWorkshape(fbUID){
                                 type: "POST",
                                 url: "http://192.168.0.12:9000/users",
                                 data: fbUID,  // falar o que esta enviando
-                                success: function() {
-                                window.location.href='createTeam.html'
+                                success: function(msg) {
+                                  msg = JSON.parse(msg);
+                                  $.cookie("sessionID",msg.sessionID)
+                                  window.location.href='createTeam.html'
                                 }
                                 });
                          
