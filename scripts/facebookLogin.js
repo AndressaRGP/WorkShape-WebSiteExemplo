@@ -82,6 +82,8 @@ FB.api('/me', function(response){
     console.log('Successful login for:' + response.name);
     document.getElementById('status').innerHTML = 
     'thanks for logging in,' + response.name + '!';
+    var facebookUserID = response.userID;
+    loginWorkshape(facebookUserID);
 });
 
 }
