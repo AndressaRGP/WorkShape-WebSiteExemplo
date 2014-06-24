@@ -19,8 +19,10 @@ function editTeam(){ //how to do this int the HTML side?
         //---PUT request using jquery 
         //get teamID and SessionID  in the URL to send here.
        $('#edit_Team').on('submit', function(e){
-         var teamID = $.cookie("teamID")
-         var sessionID = $.cookie("sessionID")
+                  e.preventDefault()
+                var teamID = $.cookie("teamID")
+                var sessionID = $.cookie("sessionID")
+
                              $.ajax({
                                     type:"PUT",
                                     url: "http://192.168.0.12:9000/team/" + teamID
@@ -28,7 +30,7 @@ function editTeam(){ //how to do this int the HTML side?
                                      data: $(this).serialize(),
                                     success: function(){
                                     //if success login show team info such as temName and teamID
-                                    alert("Team Edited");
+                                    alert("Team Edited")
                                     }
                                     
                                     });
