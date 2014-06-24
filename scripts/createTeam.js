@@ -15,7 +15,7 @@ function createTeam(){
       //  alert("Form submited!");
       
         
-        $('#create_Team').on('submit', function(e){
+        $('#create_Team').on('createTeamButton', function(e){
                          e.preventDefault();
                          var sessionID = $.cookie("sessionID")
                          $.ajax({
