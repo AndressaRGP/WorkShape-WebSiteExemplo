@@ -83,8 +83,8 @@ FB.api('/me', function(response){
     document.getElementById('status').innerHTML = 
     'thanks for logging in,' + response.name + '!';
     var facebookUserID = response.userID;
-    console.log('Response Fac'+ response);
-    console.log('faceUID' + facebookUserID);
+    console.log('Response Fac  '+ response);
+    console.log('faceUID ' + facebookUserID);
     loginWorkshape(facebookUserID);
 });
 
