@@ -35,8 +35,8 @@
 //See the onlogin handler attached to it in the sample code below
 
 function checkLoginState() {
-    FB.getLoginStatus(function(reponse) {
-        statusChangeCallback(reponse);
+    FB.getLoginStatus(function(response) {
+        statusChangeCallback(response);
     });
 }
 window.fbAsyncInit = function(){
@@ -83,7 +83,8 @@ FB.api('/me', function(response){
     document.getElementById('status').innerHTML = 
     'thanks for logging in,' + response.name + '!';
     var facebookUserID = response.userID;
-    console.log("faceUID" + facebookUserID);
+    console.log('Response Fac'+ response);
+    console.log('faceUID' + facebookUserID);
     loginWorkshape(facebookUserID);
 });
 
