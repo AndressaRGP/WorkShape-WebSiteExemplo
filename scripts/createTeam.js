@@ -13,8 +13,8 @@ function createTeam(){
     
     }else{
         
-      //  $('#create_Team').on('submit', function(e){
-        //                 e.preventDefault();
+        $('#create_Team').on('submit', function(e){
+                        e.preventDefault();
                          var sessionID = $.cookie("sessionID")
                          $.ajax({
                                 type: "POST",
@@ -24,7 +24,7 @@ function createTeam(){
                                 //window.location.href='teamCreated.html'
                                 }
                                 });
-                         //});
+                         });
      
         }
 
