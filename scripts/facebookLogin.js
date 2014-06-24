@@ -93,7 +93,7 @@ FB.api('/me', function(response){
 
 function loginWorkshape(faceUID){
 
-        
+        console.log(faceUID)
                          $.ajax({
                                 type: "POST",
                                 url: "http://192.168.0.12:9000/users",
