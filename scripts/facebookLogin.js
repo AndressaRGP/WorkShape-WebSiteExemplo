@@ -88,7 +88,7 @@ FB.api('/me', function(response){
 
     document.getElementById('status').innerHTML = 
     'thanks for logging in,' + response.name + '!';
-   
+   //oi
 });
 
 }
