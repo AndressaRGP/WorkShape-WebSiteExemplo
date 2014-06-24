@@ -91,13 +91,13 @@ FB.api('/me', function(response){
 
 //post request, create user or log in 
 
-function loginWorkshape(fbUID){
+function loginWorkshape(faceUID){
 
         
                          $.ajax({
                                 type: "POST",
                                 url: "http://192.168.0.12:9000/users",
-                                data: fbUID,  // falar o que esta enviando
+                                data:{ fbUID : faceUID},  // falar o que esta enviando
                                 success: function(msg) {
                                   $.cookie("sessionID",msg.sessionID)  
                                 }
