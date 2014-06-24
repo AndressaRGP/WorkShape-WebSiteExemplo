@@ -20,7 +20,9 @@ function createTeam(){
                                 type: "POST",
                                 url: "http://192.168.0.12:9000/team/?sessionID="+sessionID,
                                 data: $(this).serialize(),
-                                success: function() {
+                                success: function(msg) {
+                                    $.cookie("teamID",msg.teamID)
+                                    $.cookie("sessionID",sessionID)
                                 //window.location.href='teamCreated.html'
                                 }
                                 });
