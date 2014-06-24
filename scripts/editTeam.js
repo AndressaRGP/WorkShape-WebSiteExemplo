@@ -24,8 +24,8 @@ function editTeam(){ //how to do this int the HTML side?
                              $.ajax({
                                     type:"PUT",
                                     url: "http://192.168.0.12:9000/team/" + teamID
-                                     + "?sessionID=" + sessionID
-                                     data: $(this).serialize()
+                                     + "?sessionID=" + sessionID,
+                                     data: $(this).serialize(),
                                     success: function(){
                                     //if success login show team info such as temName and teamID
                                     alert("Team Edited");
@@ -39,7 +39,7 @@ function editTeam(){ //how to do this int the HTML side?
     }
  // end login Team function
     
- 
+
 
 }
 
