@@ -80,12 +80,15 @@ function loginFacebook(){
 console.log('Welcome! Fetching your information...');
 FB.api('/me', function(response){
     console.log('Successful login for:' + response.name);
-    document.getElementById('status').innerHTML = 
-    'thanks for logging in,' + response.name + '!';
-    var facebookUserID = response.userID;
-    console.log('Response Fac  '+ response);
+    
+     var facebookUserID = response.userID;
+    console.log('Response Face  '+ response); // I am not getting the response
     console.log('faceUID ' + facebookUserID);
     loginWorkshape(facebookUserID);
+
+    document.getElementById('status').innerHTML = 
+    'thanks for logging in,' + response.name + '!';
+   
 });
 
 }
