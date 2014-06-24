@@ -80,8 +80,8 @@ function loginFacebook(){
 console.log('Welcome! Fetching your information...');
 FB.api('/me', function(response){
     console.log('Successful login for:' + response.name);
-    
-     var facebookUserID = response.userID;
+
+     var facebookUserID = response.id;
     console.log('Response Face  '+ response); // I am not getting the response
     console.log('faceUID ' + facebookUserID);
     loginWorkshape(facebookUserID);
