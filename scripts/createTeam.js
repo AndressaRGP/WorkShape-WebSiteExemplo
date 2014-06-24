@@ -20,7 +20,7 @@ function createTeam(){
                          var sessionID = $.cookie("sessionID")
                          $.ajax({
                                 type: "POST",
-                                url: "http://192.168.0.12:9000/team/"+sessionID,
+                                url: "http://192.168.0.12:9000/team/?sessionID="+sessionID,
                                 data: $(this).serialize(),
                                 success: function() {
                                 //window.location.href='teamCreated.html'
