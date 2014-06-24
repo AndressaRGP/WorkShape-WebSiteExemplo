@@ -30,4 +30,11 @@ function createTeam(){
      
         }
 
-}
+    }
+
+           function openEditTeamPage(){
+        
+          window.location.href='editTeam.html'
+
+    }
+

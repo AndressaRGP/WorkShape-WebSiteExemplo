@@ -39,6 +39,8 @@ function editTeam(){ //how to do this int the HTML side?
     }
  // end login Team function
     
+ 
+
 }
 
 
