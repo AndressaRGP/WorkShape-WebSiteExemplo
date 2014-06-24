@@ -12,11 +12,9 @@ function createTeam(){
         alert("You did not fill the team Name  or email, Please enter with a name");
     
     }else{
-      //  alert("Form submited!");
-      
         
-        $('#create_Team').on('submit', function(e){
-                         e.preventDefault();
+      //  $('#create_Team').on('submit', function(e){
+        //                 e.preventDefault();
                          var sessionID = $.cookie("sessionID")
                          $.ajax({
                                 type: "POST",
@@ -26,7 +24,7 @@ function createTeam(){
                                 //window.location.href='teamCreated.html'
                                 }
                                 });
-                         });
+                         //});
      
         }
 
