@@ -12,7 +12,7 @@ function createTeam(){
         alert("You did not fill the team Name  or email, Please enter with a name");
     
     }else{
-        
+        alert("YOur team"+teamN);
       //  $('#create_Team').on('submit', function(e){
         //                 e.preventDefault();
                          var sessionID = $.cookie("sessionID")
