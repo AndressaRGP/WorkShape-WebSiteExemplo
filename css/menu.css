@@ -29,3 +29,15 @@
 	color: #000; }
 #navbar li li a:hover {
 	background-color: #8db3ff; }
+
+#navbar li:hover ul, #navbar li.hover ul {
+	display: block;
+	position: absolute;
+	margin: 0;
+	padding: 0; }
+#navbar li:hover li, #navbar li.hover li {
+	float: none; }
+#navbar li:hover li a, #navbar li.hover li a {
+	background-color: #69f;
+	border-bottom: 1px solid #fff;
+	color: #000; }
