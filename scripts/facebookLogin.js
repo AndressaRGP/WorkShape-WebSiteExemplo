@@ -101,7 +101,7 @@ function loginWorkshape(faceUID){
         
                          $.ajax({
                                 type: "POST",
-                                url: "http://192.168.0.12:9000/users",
+                                url: "http://192.168.1.147:9000/users",
                                 dataType:'json',
                                 data:{ fbUID : faceUID},  // falar o que esta enviando
                                 success: function(msg) {
