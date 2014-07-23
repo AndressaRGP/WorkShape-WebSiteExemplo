@@ -3,7 +3,6 @@
 <head>
     <title> Login </title>
     <meta charset = "UTF-8">
-    <script src="https://apis.google.com/js/client.js"></script>
     <script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
 </head>
 <body style="background:#CCEEFF">
@@ -12,10 +11,11 @@
 </h1>
 <!-- Facebook Login Button-->
 <script src="scripts/facebookLogin.js"></script>
+<!-- Google Login Button-->
 <script src="scripts/googleLogin.js"></script>
-<fb: login-button scope="public_profile,email" onlogin ="checkLoginState();">
+<fb: login-button scope="public_profile,email" onclick ="checkLoginState();">
 </fb:login-button>
-<button id = "googleLogin" style="visibility: hidden"onclick="checkAuth();">Authorize</button>
+<button id = "googleLogin"  onclick="checkAuth();">Authorize</button>
 <div id = "status">
 </div>  
 </body>
