@@ -82,9 +82,10 @@ FB.api('/me', function(response){
     console.log('Successful login for:' + response.name);
 
      var facebookUserID = response.id;
+     var userName = response.name;
     console.log('Response Face  '+ response); // I am not getting the response
     console.log('faceUID ' + facebookUserID);
-    loginWorkshape(facebookUserID);
+    loginWorkshape(userName,facebookUserID);
 
     document.getElementById('status').innerHTML = 
     'thanks for logging in,' + response.name + '!';
@@ -96,14 +97,14 @@ FB.api('/me', function(response){
 
 //post request, create user or log in 
 
-function loginWorkshape(faceUID){
+function loginWorkshape(_userName,faceUID){
 
         
                          $.ajax({
                                 type: "POST",
                                 url: "http://192.168.1.147:9000/users",
                                 dataType:'json',
-                                data:{ fbUID : faceUID},  // falar o que esta enviando
+                                data:{ userName:_userName, fbUID : faceUID},  // falar o que esta enviando
                                 success: function(msg) {
                                   $.cookie("sessionID",msg.sessionID)  
                                 }
