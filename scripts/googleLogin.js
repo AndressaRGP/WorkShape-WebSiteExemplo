@@ -2,8 +2,8 @@
 //-----Google Code
 
 var client_id = '350435369758.apps.googleusercontent.com';
-var apiKey = '';
-var scopes = '';
+var apiKey = 'AIzaSyAdOriO2BlsjVkQYh-Kxt7bO3EnfL5FRXY';
+var scopes = 'https://www.googleapis.com/auth/plus.me';
 
   function handleClientLoad() {
         gapi.client.setApiKey(apiKey);
