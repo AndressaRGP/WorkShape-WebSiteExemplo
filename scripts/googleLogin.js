@@ -7,7 +7,7 @@ var scopes = 'https://www.googleapis.com/auth/drive';
 
   function handleClientLoad() {
   	//reference the apiKey
-  	  
+
         gapi.client.setApiKey(apiKey);
         window.setTimeout(checkAuth,1);
       }
@@ -64,7 +64,7 @@ var scopes = 'https://www.googleapis.com/auth/drive';
 
 //post request, create user or log in 
 
-function loginWorkshape(googleUID){
+/*function loginWorkshape(googleUID){
 
         
                          $.ajax({
@@ -81,3 +81,4 @@ function loginWorkshape(googleUID){
 
 
 }
+*/
