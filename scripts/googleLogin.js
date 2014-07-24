@@ -3,7 +3,7 @@
 
 var client_id = '350435369758.apps.googleusercontent.com';
 var apiKey = 'AIzaSyAdOriO2BlsjVkQYh-Kxt7bO3EnfL5FRXY';
-var scopes = 'https://www.googleapis.com/auth/drive';
+var scopes = 'https://www.googleapis.com/auth/plus.me';
 
   function handleClientLoad() {
   	//reference the apiKey
@@ -16,7 +16,7 @@ var scopes = 'https://www.googleapis.com/auth/drive';
 
    function checkAuth() {
 
-        gapi.auth.authorize({client_id: client_id, scope: scopes, immediate: true}, handleAuthResult);
+        gapi.auth.authorize({'client_id': client_id, 'scope': scopes, 'immediate': true}, handleAuthResult);
       }
 
      function handleAuthResult(authResult) {
@@ -32,7 +32,7 @@ var scopes = 'https://www.googleapis.com/auth/drive';
 
       function handleAuthClick(event) {
       	//Step 3 : get authorization to use private data
-        gapi.auth.authorize({client_id: client_id, scope: scopes, immediate: false}, handleAuthResult);
+        gapi.auth.authorize({'client_id': client_id, 'scope': scopes, 'immediate': false}, handleAuthResult);
         return false;
       }
 
