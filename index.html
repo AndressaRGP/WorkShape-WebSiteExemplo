@@ -3,28 +3,31 @@
 <head> 
     <title> WORKSHAPE</title>
     <meta charset="UTF-8">
-<link href="css/background.css" rel="stylesheet" type="text/css"> 
-<link href="css/menu.css" rel="stylesheet" type="
-text/css"> 
+    <script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
+    <link href="css/menu.css" rel="stylesheet" type="
+    text/css"> 
 </head>
 <body>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
     <div id="fb-root"></div>
     <script src="scripts/facebookLogin.js"></script>
-     <script src="scripts/updateMenu.js"></script>
+    <script src="scripts/googleLogin.js"></script>
+    <script src="scripts/updateMenu.js"></script>
     
-    <div class='wrapper'>
+ <div class='wrapper'>
         <img class="background-cloud cloud1" src="images/cloud.png">
         <img class="background-cloud cloud2" src="images/cloud.png">
         <img class="background-cloud cloud3" src="images/cloud.png">
         <img class="logo" src="images/logo.png">
-    </div>
+ </div>
     
     <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
     </fb:login-button>
-
+    <button id = "googleLogin"  onclick="checkAuth();">Authorize
+    </button>
     <button type="button" onClick="openCreateTeamPage()"> Create New Team</button>
+
 
 <div id="status">
 </div>
