@@ -6,6 +6,7 @@ var apiKey = 'AIzaSyAdOriO2BlsjVkQYh-Kxt7bO3EnfL5FRXY';
 var scopes = 'https://www.googleapis.com/auth/plus.me';
 
   function handleClientLoad() {
+  	//reference the apiKey
         gapi.client.setApiKey(apiKey);
         window.setTimeout(checkAuth,1);
       }
@@ -34,16 +35,21 @@ var scopes = 'https://www.googleapis.com/auth/plus.me';
       }
 
       function handleAuthClick(event) {
-        gapi.auth.authorize({client_id: clientId, scope: scopes, immediate: false}, handleAuthResult);
+      	//Step 3 : get authorization to use private data
+        gapi.auth.authorize({client_id: client_id, scope: scopes, immediate: false}, handleAuthResult);
         return false;
       }
 
       // Load the API and make an API call.  Display the results on the screen.
       function makeApiCall() {
+      	//Load google+ API
         gapi.client.load('plus', 'v1', function() {
+        	//Assemble the API request
           var request = gapi.client.plus.people.get({
             'userId': 'me'
           });
+
+          //Execute te API request
           request.execute(function(resp) {
             var heading = document.createElement('h4');
             var image = document.createElement('img');
