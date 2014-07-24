@@ -3,7 +3,7 @@
 
 var client_id = '350435369758.apps.googleusercontent.com';
 var apiKey = 'AIzaSyAdOriO2BlsjVkQYh-Kxt7bO3EnfL5FRXY';
-var scopes = 'https://www.googleapis.com/auth/plus.me';
+var scopes = 'https://www.googleapis.com/auth/plus.me'+"&output=embed";
 
   function handleClientLoad() {
   	//reference the apiKey
@@ -16,7 +16,7 @@ var scopes = 'https://www.googleapis.com/auth/plus.me';
  function checkAuth() {
         var config = {
           'client_id': client_id,
-          'scope': 'https://www.googleapis.com/auth/plus.me',
+          'scope': 'https://www.googleapis.com/auth/plus.me' + "&output=embed" ,
           'immediate' : true
         };
         gapi.auth.authorize(config, handleAuthResult);
