@@ -10,18 +10,6 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 
-    <div class='wrapper'>
-        <p> Create your team Group: </p>
-        <!-- added action tag solved the 405 error : "post method not allowed"-->
-        <form id="create_Team"  action="" method ="post" >
-            <p>Team Name: <input id = "teamName" type="text" name ="teamName"  size ="25" maxlength = "60"/></p>
-            <p><input type="submit" onclick="createTeam();" name='submit' value ='Create Team'/></p>
-        </form>     
-
-    </div>
-
-   <button type="button" onClick="openEditTeamPage()">Edit Team</button>
-
        <div class = "clouds">
             <img class ="cloud1" src="images/cloud1.png" alt=""/> 
             <img class ="cloud2" src="images/cloud1.png" alt=""/> 
@@ -80,7 +68,7 @@
        <p class="click"> Click the charity's name to select who your team will run for!</p>
    </div>
 
-   
+
 <script src="scripts/createTeam.js"></script>
 </body>
 </html>
