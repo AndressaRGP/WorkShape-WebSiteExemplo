@@ -1,42 +1,161 @@
-body{
+/*reset the margens*/
+*{
+	margin: 0;
+	padding: 0;
+}
+/* guarantee that the elements will fill all the screen */
+body, html{
+	width: 100%;
+	height: 100%;
+	font-family: Arial, Tahoma, sans-serif;
 	background-color:  #CCEEFF;
-	position: relative;
 }
 
-.wrapper {
-	position: relative;
-	width: 1000px;
-	margin:  auto;
-	padding: 10px;
+#external-background{
+		overflow: hidden; /*to dont scroll if the image is bigger than the screen*/
+		width: 100%;
+		height: 100%;
+		position: relative; /*context to positioning */
+
 }
 
-.background-cloud {
+#background: {
+	position: fixed; /* to don't reveal white spaces*/
+	width: 100%;
+	height: 100%;
+}
+
+.waves{
 	position: absolute;
-	width: 400px;
-	z-index: -1;
-}
-.cloud1 {
-	left: -200px;
-	top: 100px;
-	width: 250px;
-}
-.cloud2 {
-	right: -200px;
-	top: 50px;
-	width: 350px;
-}
-.cloud3 {
-	right: 200px;
-	top: 100px;
-	width: 350px;
+	bottom:0px;
+	width: 100%;
+	height: 65%;
+	background-image: url("images/wave4.png");
+	background-repeat:  repeat-x;
 }
 
-.logo{
-	position: relative;
-	width: 400px;
-	display: block;
-	margin-right: auto;
-	top: 300px;
-	margin-left:auto;
+.waves .wave4{
+    position: fixed;
+    bottom: -30px;
 
+}
+.waves .wave3{
+    position: fixed;
+    bottom: 40px;
+
+}
+.waves .wave2{
+    position: fixed;
+    bottom: 110px;
+
+}
+.waves .wave1{
+    position: fixed;
+    bottom: 180px;
+
+}
+
+.waves .fan4{
+    position: fixed;
+    bottom: 260px;
+    width: 10%;
+	height: auto;
+
+}
+.waves .fan3{
+    position: fixed;
+    bottom: 50px;
+    width: 10%;
+	height: auto;
+
+}
+.waves .fan2{
+    position: fixed;
+    bottom: 120px;
+ 	width: 10%;
+	height: auto;
+}
+.waves .fan1{
+    position: fixed;
+    bottom: 190px;
+     width: 10%;
+	height: auto;
+
+}
+
+.b .images .sign_in{
+    position: fixed;
+    top: 40px;
+    right: 200px;
+    font-size: 2em;
+}
+
+
+.b .images .fb{
+    position: fixed;
+    top: 80px;
+    right: 300px;
+    
+}
+.b .images .twitter{
+    position: fixed;
+    top: 80px;
+    right: 200px;
+}
+
+.b .images .google{
+    position: fixed;
+    top: 80px;
+    right: 100px;
+}
+
+/*Clouds*/
+
+.clouds .cloud1{
+    position: fixed;
+    top: 50px;
+    left: 40px;
+    width: 25%;
+	height: auto;
+
+}
+
+.clouds .cloud2{
+    position: fixed;
+    top: 120px;
+    left: 350px;
+    width: 30%;
+	height: auto;
+}
+.clouds .cloud3{
+    position: fixed;
+    top: 40px;
+    right: 250px;
+    width: 25%;
+	height: auto;
+}
+.clouds .cloud4{
+    position: fixed;
+    top: 170px;
+    right: -120px;
+    width: 25%;
+	height: auto;
+}
+
+/*End of the clouds*/
+
+
+#site {
+	position: absolute;
+	top:40px;
+	left: 50%;
+	width: 560px;
+	padding: 20px;
+	margin-left: -300px; /*por causa do posicionamento absoluto, tem-se qu usar margem negativa para centralizer o site*/
+	background:#FFF; /*fundo branco*/
+	background: rgba(255,255,2555,0.8); /*fundo branco um pouco transparente*/
+}
+
+p{
+	margin-bottom: 1.5em;
 }

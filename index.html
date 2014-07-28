@@ -5,8 +5,6 @@
     <meta charset="UTF-8">
     <script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
 <link href="css/background.css" rel="stylesheet" type="text/css"> 
-<link href="css/menu.css" rel="stylesheet" type="
-text/css"> 
 </head>
 <body>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -14,17 +12,47 @@ text/css">
     <div id="fb-root"></div>
     <script src="scripts/facebookLogin.js"></script>
     <script src="scripts/googleLogin.js"></script>
-     <script src="scripts/updateMenu.js"></script>
+    <script src="scripts/updateMenu.js"></script>
     
-    <div class='wrapper'>
-        <img class="background-cloud cloud1" src="images/cloud.png">
-        <img class="background-cloud cloud2" src="images/cloud.png">
-        <img class="background-cloud cloud3" src="images/cloud.png">
-        <img class="logo" src="images/logo.png">
+      <div class = "clouds">
+            <img class ="cloud1" src="images/cloud1.png" alt=""/> 
+            <img class ="cloud2" src="images/cloud1.png" alt=""/> 
+            <img class ="cloud3" src="images/cloud1.png" alt=""/> 
+            <img class ="cloud4" src="images/cloud1.png" alt=""/> 
+
     </div>
-    
-    <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-    </fb:login-button>
+
+    <div class = "b">
+        <div  class="images">
+             <p class="sign_in" > SIGN IN: </p>
+             <img class ="fb" src="images/fbook.png" alt="" onclick="checkLoginState();"/> 
+             <img class="google" src="images/google.png" alt=""/> 
+             <img class="twitter" src="images/twitter.png" alt=""/> 
+
+        </div>
+    </div>
+
+    <div class ="waves">
+       <img class="people" src="images/people.png">
+       <img class = "fan4" src="images/fan.png">
+        <img class = "wave1" src="images/wave4.png" >
+         <img class = "fan1" src="images/fan.png">
+         <img class = "wave2" src="images/wave4.png">
+         <img class = "fan2" src="images/fan.png">
+          <img class = "wave3" src="images/wave4.png">
+          <img class = "fan3" src="images/fan.png">
+           <img class = "wave4" src="images/wave4.png">
+                        
+    </div>
+  
+ 
+
+    <div id="site"> 
+        <h1> WORKSHAPE</h1>
+        <p>
+            Hello everybody...  
+        </p>    
+    </div>
     <button id = "googleLogin"  onclick="checkAuth();">Google Login
     </button>
     <button type="button" onClick="openCreateTeamPage()"> Create New Team</button>
