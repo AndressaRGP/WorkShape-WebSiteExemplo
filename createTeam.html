@@ -2,6 +2,9 @@
 <html>
 <head> 
 <link href="css/background.css" rel="stylesheet" type="text/css"> 
+<link href="css/create_a_team_form.css" rel="stylesheet" type="text/css"> 
+<link href="css/searchCharity.css" rel="stylesheet" type="text/css"> 
+
 </head>
 <body>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -53,6 +56,31 @@
                         
     </div>
 
+
+<div class="team"> 
+     <img class="teamInfo" src="images/leaderboard.png">  
+        <p class= "createT"> Create a Team </p>
+        <p class= "chooseC"> Choose a Charity </p>
+        <p class= "enter"> Enter Team Member's Email</p>
+        <p class= "upload">Upload your Company<br>or Team's Logo</p>
+
+        <!-- added action tag solved the 405 error : "post method not allowed"-->
+        <form id="create_team_form"  action="" method ="post" >
+            <textarea class= "field1" id = "teamName" type="text" name ="teamName"  size ="25" maxlength = "60"/>Team Name</textarea>
+            <textarea class= "field2" id = "companyName" type="text" name ="companyName"  size ="25" maxlength = "60" value="Company Name"/> Company Name</textarea>
+            <textarea class= "field3" id = "teamDescription" type="text" name ="teamDescription"  size ="25" maxlength = "60" value="Team Description"/>Team Description</textarea>
+            <textarea class= "email" type="text" name ="emails"  size ="25" maxlength = "60" value="emails"/>Emails</textarea>
+            
+        
+        </form>    
+        <img class="greenButton" src="images/greenbutton.png" onclick="createTeam();" >
+   
+   <div class="charity">
+       <textarea class= "searchCharity" id = "searchCharity" type="text" name ="teamName"  size ="25" maxlength = "60"/>Search for a Charity</textarea>
+       <p class="click"> Click the charity's name to select who your team will run for!</p>
+   </div>
+
+   
 <script src="scripts/createTeam.js"></script>
 </body>
 </html>

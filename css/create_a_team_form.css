@@ -1,0 +1,98 @@
+
+.team{
+    position: absolute;
+    top:0px;
+    left: 320px;
+    width: 50%;
+    height: 600px;
+}
+
+.team .teamInfo{
+    position: fixed;
+    width: 60%;
+    height: auto;
+ 
+}
+
+.team .createT{
+	position: fixed;
+   	font-size: 2em;
+   	top: 240px;
+   	left: 350px;
+
+}
+.team .chooseC{
+	position: fixed;
+   	font-size: 2em;
+   	top: 240px;
+   	right: 350px;
+
+}
+
+
+/*Form Create Team Info*/
+
+.team .field1{
+	position: fixed;
+   	top: 300px;
+   	left: 350px;
+   	width: 13%;
+   	height:5%;
+}
+
+.team .field2{
+	position: fixed;
+   	top: 350px;
+   	left: 350px;
+    width: 13%;
+   	height:5%;
+
+}
+
+.team .field3{
+	position: fixed;
+   	top: 400px;
+   	left: 350px;
+    width: 13%;
+   	height:5%;
+
+}
+
+.team .enter{
+	position: fixed;
+   	font-size: 0.9em;
+   	top: 450px;
+   	left: 350px;
+
+}
+
+.team .email{
+	position: fixed;
+   	top: 480px;
+   	left: 350px;
+    width: 13%;
+   	height:5%;
+
+}
+
+.team .upload{
+	position: fixed;
+   	top: 430px;
+   	left: 720px;
+    font-size: 1em;
+    text-align: center;
+}
+/*End Form Create Team Info*/
+
+/*Buttons*/
+
+.team .greenButton{
+	position: fixed;
+   	top: 520px;
+   	right: 300px;
+    width: 24%;
+    height: auto;
+
+}
+
+/*End Button Edition*/
