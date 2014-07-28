@@ -26,8 +26,9 @@
         <div  class="images">
              <p class="sign_in" > SIGN IN: </p>
              <img class ="fb" src="images/fbook.png" alt="" onclick="checkLoginState();"/> 
-             <img class="google" src="images/google.png" alt=""/> 
+             <img class="google" src="images/google.png" alt="" onclick="checkAuth();"/> 
              <img class="twitter" src="images/twitter.png" alt=""/> 
+              <button type="button" onClick="openCreateTeamPage()"> Create New Team</button>
 
         </div>
     </div>
@@ -53,12 +54,6 @@
             Hello everybody...  
         </p>    
     </div>
-    <button id = "googleLogin"  onclick="checkAuth();">Google Login
-    </button>
-    <button type="button" onClick="openCreateTeamPage()"> Create New Team</button>
-
-<div id="status">
-</div>
  
 
  <!-- ...Menu... -->
