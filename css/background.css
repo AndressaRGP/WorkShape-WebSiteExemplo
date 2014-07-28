@@ -32,6 +32,31 @@ body, html{
 	height: 65%;
 }
 
+.waves .finishLine{
+    position: fixed;
+    bottom: 240px;
+    right: 40px;
+    width: 9%;
+    height: auto;
+
+}
+
+.waves .wood1{
+    position: fixed;
+    bottom: 100px;
+    right: 40px;
+    width: 9%;
+    height: auto;
+}
+
+.waves .wood2{
+    position: fixed;
+    bottom: 0px;
+    right: 40px;
+    width: 9%;
+    height: auto;
+}
+
 .waves .wave4{
     position: fixed;
     bottom: -30px;
