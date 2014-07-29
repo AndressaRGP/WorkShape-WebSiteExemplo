@@ -9,3 +9,8 @@
 	background: rgba(255,255,2555,0.8); /*fundo branco um pouco transparente*/
 
 }
+
+.logo .people{
+	width: 20%;
+	height: auto;
+}
