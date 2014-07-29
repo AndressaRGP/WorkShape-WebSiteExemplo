@@ -20,6 +20,7 @@ a {
 }
 
 .menu-opener { /*mug*/
+  background:#83AC30;
   cursor: pointer;
   height: 64px;
   position: absolute;
@@ -33,8 +34,9 @@ a {
     border-radius: 4px;
    -mox-border-radius: 4px;
 }
-.menu-opener:hover, .menu-opener.active {
-  background: #83AC30;
+
+.menu-opener-inner:hover{
+  background:#000000;
 }
 
 .menu-opener-inner { /*lines*/
