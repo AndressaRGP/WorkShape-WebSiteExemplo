@@ -95,4 +95,12 @@
 
 }
 
+.team .img-box{
+    position: fixed;
+    top: 460px;
+    right: 720px;
+    width: 10%;
+    height: auto;
+}
+
 /*End Button Edition*/
