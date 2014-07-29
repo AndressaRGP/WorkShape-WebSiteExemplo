@@ -11,6 +11,7 @@
 }
 
 .logo .people{
-	width: 20%;
+	position: fixed;
+	width: 5%;
 	height: auto;
 }
