@@ -68,7 +68,7 @@ a {
   transform: translateY(0.25rem);
 }
 .menu-opener-inner.active {
-  background: #83AC30;
+  background: transparent;
 }
 .menu-opener-inner.active::before {
   -webkit-transform: translateY(0rem) rotate(-45deg);
