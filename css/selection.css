@@ -1,15 +1,15 @@
 .fb:hover{
 	border: 3px solid #003399;
-	border-radius: 5px;
+	border-radius: 10px;
 }
 
 .twitter:hover{
 	border: 3px solid #0099FF;
-	border-radius: 5px;
+	border-radius: 10px;
 }
 
 .google:hover{
 	border: 3px solid #CC0000;
-	border-radius: 5px;
+	border-radius: 10px;
 }
 
