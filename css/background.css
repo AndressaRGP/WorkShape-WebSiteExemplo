@@ -167,18 +167,6 @@ body, html{
 
 /*End of the clouds*/
 
-
-#site {
-	position: absolute;
-	top:40px;
-	left: 50%;
-	width: 560px;
-	padding: 20px;
-	margin-left: -300px; /*por causa do posicionamento absoluto, tem-se qu usar margem negativa para centralizer o site*/
-	background:#FFF; /*fundo branco*/
-	background: rgba(255,255,2555,0.8); /*fundo branco um pouco transparente*/
-}
-
 p{
 	margin-bottom: 1.5em;
 }
