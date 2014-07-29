@@ -35,8 +35,12 @@ a {
    -mox-border-radius: 4px;
 }
 
-.menu-opener-inner:hover{
-  background:#000000;
+.menu-opener:hover{
+  background:#00FF00;
+}
+
+.c1:hover{
+  border: 7px solid #00FF00;
 }
 
 .menu-opener-inner { /*lines*/
