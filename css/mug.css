@@ -19,7 +19,7 @@ a {
   transition: 250ms all;
 }
 
-.menu-opener {
+.menu-opener { /*mug*/
   cursor: pointer;
   height: 64px;
   position: absolute;
@@ -37,7 +37,7 @@ a {
   background: #83AC30;
 }
 
-.menu-opener-inner {
+.menu-opener-inner { /*lines*/
   background: white;
   height: .5rem;
   margin-left: .75rem;
