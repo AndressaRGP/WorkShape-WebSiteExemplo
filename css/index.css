@@ -1,17 +1,13 @@
 .logo{
-	position: absolute;
+	position: fixed;
 	top:50px;
-	left: 50%;
-	width: 560px;
-	padding: 20px;
-	margin-left: -300px; /*por causa do posicionamento absoluto, tem-se qu usar margem negativa para centralizer o site*/
-	background:#FFF; /*fundo branco*/
-	background: rgba(255,255,2555,0.8); /*fundo branco um pouco transparente*/
-
+	left: 600px;
+	width: 400px;
+	height: 400px;
 }
 
 .logo .people{
 	position: fixed;
-	width: 5%;
+	width: 25%;
 	height: auto;
 }
