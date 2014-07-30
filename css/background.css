@@ -4,7 +4,7 @@
 	padding: 0;
 }
 /* guarantee that the elements will fill all the screen */
-body, html{
+body{
 	width: 100%;
 	height: 100%;
 	font-family: Arial, Tahoma, sans-serif;
