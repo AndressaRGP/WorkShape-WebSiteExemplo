@@ -1,5 +1,9 @@
-
-
+.images{
+position: fixed;
+width: 20%;
+height: auto;
+left: 0px;
+}
 
 .images .fb:hover{
 	border: 3px solid #003399;
