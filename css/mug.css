@@ -1,10 +1,17 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:100,300,400,700);
-*,
-*::before
-*::after {
+.mug-holder,
+.mug-holder::before::after,
+.mug-holder::after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+.mug-holder {
+  position: fixed;
+  width: 80%;
+  height: auto;
+
 }
 
 a {
@@ -19,38 +26,31 @@ a {
   transition: 250ms all;
 }
 
-.menu-opener { /*mug*/
+.menu-opener {
   background:#83AC30;
   cursor: pointer;
   height: 64px;
   position: absolute;
-  top: 2%;
-  left: 3%;
+  top: 20%; /*must be the same as the menu*/
+  left: 5%;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   width: 64px;
-    border-radius: 4px;
-   -mox-border-radius: 4px;
+  border-radius: 4px;
+  -mox-border-radius: 4px;
 }
 
-.menu-opener:hover{
-  background:#00FF00;
-}
 
-.c1:hover{
-  border: 7px solid #00FF00;
-}
-
-.menu-opener-inner { /*lines*/
+.menu-opener-inner { /*white lines*/
   background: white;
   height: .5rem;
   margin-left: .75rem;
   margin-top: 1.75rem;
   width: 2.5rem;
 }
-.menu-opener-inner::before, .menu-opener-inner::after {
+.menu-opener-inner::before, .menu-opener-inner::after { /*white lines*/
   background: white;
   content: '';
   display: block;
@@ -81,13 +81,13 @@ a {
   transform: translateY(-0.5rem) translateX(0rem) rotate(45deg);
 }
 
-.menu {
+.menu { /*menu opened*/
   background: #B5DA47;
   color: #83AC30;
-  height: 64px;
+  height: 64px; /*alter the size of the menu that opens*/
   position: absolute;
-  top: 2%;
-  left:3%;
+  top: 20%;  /*to fit in the mug, must be the same as the mug*/
+  left:5%;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -102,10 +102,10 @@ a {
   width: calc(100% - 2rem);
 }
 .menu.active .menu-link {
-  color: #83AC30;
+  color: white;
 }
 
-.menu-inner {
+.menu-inner { /*name of the menus*/
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -118,7 +118,7 @@ a {
   height: 100%;
   list-style-type: none;
   margin: 0;
-  margin-left: 4rem;
+  margin-left: 4rem; /*distance between the mug and the first menu*/
   padding: 0;
 }
 
@@ -132,14 +132,14 @@ a {
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
-  font-size: 2rem;
+  font-size: 1.2rem;
   font-weight: 100;
   height: 100%;
   text-align: center;
   text-decoration: none;
 }
 .menu-link li {
-  margin: 5px;
+  margin: 15px; /*margin of the menus f*/
 }
 
 @media screen and (max-width: 768px) {
@@ -160,14 +160,14 @@ a {
 }
 
 
-.c1 {
+.c1 { /*circle, holder*/
     list-style: none;
     margin: 0;
     padding: 0;
-    width: 40px;
-    height: 40px;
+    width: 25px;
+    height: 25px;
     margin-top:25px;
-    margin-left:20px;
+    margin-left:25px;
     border-radius: 100px;
     border: 7px solid #83AC30;
 }
