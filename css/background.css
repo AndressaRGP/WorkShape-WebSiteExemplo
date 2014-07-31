@@ -122,7 +122,7 @@ body{
 
 }
 
-.b .images .sign_in{
+ .images .sign_in{
     position: fixed;
     top: 40px;
     right: 200px;
@@ -130,19 +130,19 @@ body{
 }
 
 
-.b .images .fb{
+ .images .fb{
     position: fixed;
     top: 80px;
     right: 300px;
     
 }
-.b .images .twitter{
+ .images .twitter{
     position: fixed;
     top: 80px;
     right: 200px;
 }
 
-.b .images .google{
+ .images .google{
     position: fixed;
     top: 80px;
     right: 100px;
