@@ -1,15 +1,15 @@
-.charity .searchCharity{
+ .searchCharity{
 	position: fixed;
-   	top: 300px;
-   	right: 350px;
+   	top: 36%;
+   	right: 20%;
     width: 13%;
    	height:5%;
 }
 
-.charity .click{
+.click{
 	position: fixed;
-   	top: 350px;
-   	right: 350px;
+   	top: 46%;
+   	right: 13%;
    	font-size: 0.9em;
    
 
