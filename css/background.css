@@ -181,6 +181,21 @@ body{
 	height: auto;
 }
 
+.logo{
+    position: fixed;
+    top: 20%;
+    left: 35%;
+}
+
+.logo .people{
+    position: fixed;
+    width: 35%;
+    height: auto;
+    left: auto;
+    right: auto;
+}
+
+
 /*End of the clouds*/
 
 p{
