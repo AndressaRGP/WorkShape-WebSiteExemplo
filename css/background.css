@@ -32,24 +32,40 @@ body{
 	height: 65%;
 }
 
-.waves .finishLine{
+
+.fline{
     position: fixed;
-    bottom: 240px;
+    right: 0%;
+    bottom:0px;
+    width: 20%;
+    height: 70%;
+}
+
+.finishLine{
+    position: fixed;
+    bottom: 255px;
     right: 40px;
     width: 9%;
     height: auto;
 
 }
-
-.waves .wood1{
+.wood1{
     position: fixed;
-    bottom: 100px;
+    bottom: 160px;
     right: 40px;
     width: 9%;
     height: auto;
 }
 
-.waves .wood2{
+.wood2{
+    position: fixed;
+    bottom: 80px;
+    right: 40px;
+    width: 9%;
+    height: auto;
+}
+
+ .wood3{
     position: fixed;
     bottom: 0px;
     right: 40px;
