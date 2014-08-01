@@ -20,6 +20,7 @@ right: 0px;
 	border-radius: 10px;
 }
 
-.menu-opener:hover .c1{
-	background: #00FF99;
+.mug-holder .menu-opener:hover{
+	border: 7px solid #00FF99;
+	
 }
