@@ -20,6 +20,6 @@ right: 0px;
 	border-radius: 10px;
 }
 
-.menu-opener .c1:hover{
+.menu-opener:hover .c1{
 	background: #00FF99;
 }
