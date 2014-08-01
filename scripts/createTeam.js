@@ -1,19 +1,18 @@
 function createTeam(){
     //Get value of input field with id ="numb"
     var teamN= document.getElementById("teamName").value;
-   // var teamEmail =document.getElementById("email").value; //maybe not, tae it off.
-    //var adminID = document.getElementById("adminID").value;
-    
+    var companyName =document.getElementById("companyName").value; //maybe not, tae it off.
+    var charityName = document.getElementById("charityName").value;
     //Get the element with id = "demo"
     
     //If value is apace or not a number
-    if((teamN.trim() == ""))
+    if((teamN.trim() == "") || (companyName.trim() == "") || (charityName.trim() == ""))
     {
-        alert("You did not fill the team Name  or email, Please enter with a name");
+        alert("You did not fill the team Name  or companyName, Please enter with a name");
     
     }else{
         
-        $('#create_Team').on('submit', function(e){
+        $('#create_team_form').on('submit', function(e){
                         e.preventDefault();
                          var sessionID = $.cookie("sessionID")
                          $.ajax({

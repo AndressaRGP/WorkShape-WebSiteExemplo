@@ -46,28 +46,25 @@
         <p class= "upload">Upload your Company<br>or Team's Logo</p>
 
         <!-- added action tag solved the 405 error : "post method not allowed"-->
-        <form id="create_team_form"  action="" method ="post" >
-            <textarea class= "field1" id = "teamName" type="text" name ="teamName"  size ="25" maxlength = "60"/>Team Name</textarea>
-            <textarea class= "field2" id = "companyName" type="text" name ="companyName"  size ="25" maxlength = "60" value="Company Name"/> Company Name</textarea>
-            <textarea class= "field3" id = "teamDescription" type="text" name ="teamDescription"  size ="25" maxlength = "60" value="Team Description"/>Team Description</textarea>
-            <textarea class= "email" type="text" name ="emails"  size ="25" maxlength = "60" value="emails"/>Emails</textarea>
-        </form>   
-        <img class="img-box" src="images/imgBox.png" alt=""/>
-        <img class="greenButton" src="images/greenbutton.png" alt="" onclick="createTeam();"/>
-   
-     <div class="charity">
-       <textarea class= "searchCharity" id = "searchCharity" type="text" name ="teamName"  size ="25" maxlength = "60"/>Search for a Charity</textarea>
-       <p class="click"> Click the charity's name to select who your team will run for!</p>
-    </div>
+     <form id="create_team_form"  action="" method ="post" >
+            <textarea class= "field1" id = "teamName" type="text" name ="teamName"  size ="25" maxlength ="60"   />Team Name</textarea>
+            <textarea class= "field2" id = "companyName" type="text" name ="companyName"  size ="25" maxlength   = "60" value="Company Name"/> Company Name</textarea>
+            <textarea class= "field3" id = "teamDescription" type="text" name ="teamDescription"  size ="25"    maxlength = "60" value="Team Description"/>Team Description</textarea>
+            <textarea class= "email" type="text" name ="emails"  size ="25" maxlength = "60" value="emails"/>   Emails</textarea>
+            <textarea class= "searchCharity" id = "searchCharity" type="text" name ="teamName"  size ="25"      maxlength = "60"/>Search for a Charity</textarea>
+            <p class="click"> Click the charity's name to select who your team will run for!</p>
+     </form>   
+     <img class="img-box" src="images/imgBox.png" alt=""/>
+     <img class="greenButton" src="images/greenbutton.png" alt="" onclick="createTeam();"/>
 
 </div>
 
-      <div  class="images">
+ <div  class="images">
              <p class="sign_in" > SIGN IN: </p>
              <img class ="fb" src="images/fbook.png" alt="" onclick="checkLoginState();"/> 
              <img class="google" src="images/google.png" alt="" onclick="checkAuth();"/> 
              <img class="twitter" src="images/twitter.png" alt=""/> 
-      </div>
+ </div>
 
    <!-- MUG-->
   <div class="mug-holder">
