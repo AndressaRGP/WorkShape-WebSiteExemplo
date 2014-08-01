@@ -24,3 +24,7 @@ right: 0px;
 	border: 7px solid #00FF99;
 	
 }
+
+.team .greenButton:hover{
+	border: 7px solid #00FF99;
+}
