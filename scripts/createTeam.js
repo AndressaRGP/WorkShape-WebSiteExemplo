@@ -1,4 +1,4 @@
-function createTeam(){
+$("#greenButton").click(function(){  
     //Get value of input field with id ="numb"
     var teamN= document.getElementById("teamName").value;
     var companyName =document.getElementById("companyName").value; //maybe not, tae it off.
@@ -11,8 +11,8 @@ function createTeam(){
         alert("You did not fill the team Name  or companyName, Please enter with a name");
     
     }else{
-        
-        $('#create_team_form').on('submit', function(e){
+  
+        $('#create_team_form').submit(function(e){
                         e.preventDefault();
                          var sessionID = $.cookie("sessionID")
                          $.ajax({
@@ -28,6 +28,7 @@ function createTeam(){
                          });
      
         }
+});
 
     }
 
