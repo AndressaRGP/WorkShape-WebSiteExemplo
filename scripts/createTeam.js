@@ -1,4 +1,4 @@
-$(".greenButton").click(function(){  
+function createTeam(){
     //Get value of input field with id ="numb"
     var teamN= document.getElementById("teamName").value;
     var companyName =document.getElementById("companyName").value; //maybe not, tae it off.
@@ -27,7 +27,7 @@ $(".greenButton").click(function(){
                                 });
                          });
         }
-});
+}
    function openEditTeamPage(){
         
        window.location.href='editTeam.html';
