@@ -30,7 +30,7 @@ $("#greenButton").click(function(){
         }
 });
 
-    }
+    
 
            function openEditTeamPage(){
         
