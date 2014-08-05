@@ -12,7 +12,7 @@ function createTeam(){
     
     }else{
   
-        $('#create_team_form').submit(function(e){
+        $('#create_team_form').on('submit',function(e){
                         e.preventDefault();
                          var sessionID = $.cookie("sessionID")
                          $.ajax({
