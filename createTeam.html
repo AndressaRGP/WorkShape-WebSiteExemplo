@@ -47,19 +47,16 @@
 
         <!-- added action tag solved the 405 error : "post method not allowed"-->
      <form id="create_team_form"  action="" method ="post">
-            <textarea class= "teamName" type="text" id="teamName" name ="teamName"  size ="25" maxlength ="60">Team Name
-            </textarea>
-            <textarea class= "companyName" type="text" id="companyName"  name ="companyName"  size   ="25" maxlength   = "60" value="Company Name"> Company Name
-            </textarea>
-            <textarea class= "teamDescription"  type="text" id="teamDescription"  name ="teamDescription"    size ="25"    maxlength = "60" value="Team Description">     Team Description
-            </textarea>
-            <textarea class= "email" type="text" id="email"  name ="email"  size ="25"   maxlength = "60" value="emails">   Emails</textarea>
-            <textarea class= "searchCharity"  type="text" id="charityName" name ="charityName  "  size ="25"      maxlength = "60">  Search for a Charity
-            </textarea>
+            <input class= "teamName" type="text" id="teamName" name ="teamName"  size ="25" maxlength ="60">
+            <input class= "companyName" type="text" id="companyName"  name ="companyName"  size   ="25" maxlength   = "60" value="Company Name">
+            <input class= "teamDescription"  type="text" id="teamDescription"  name ="teamDescription"    size ="25"    maxlength = "60" value="Team Description">
+            <input class= "email" type="text" id="email"  name ="email"  size ="25"   maxlength = "60" value="emails">   
+            <input class= "searchCharity"  type="text" id="charityName" name ="charityName  "  size ="25"      maxlength = "60">
             <p class="click"> Click the charity's name to select who your team will run for!</p>
+             <input type="submit" value="Create My Team!">
      </form>   
      <img class="img-box" src="images/imgBox.png" alt=""/>
-     <img class="greenButton" src="images/greenbutton.png" alt="" onClick="createTeam();"/>
+   <!--  <img class="greenButton" src="images/greenbutton.png" alt="" onClick="createTeam();"/> -->
 </div>
 
  <div  class="images">

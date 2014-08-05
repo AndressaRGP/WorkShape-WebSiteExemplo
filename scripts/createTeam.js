@@ -23,10 +23,10 @@ function createTeam(){
                                     $.cookie("teamID",msg.teamID)
                                     $.cookie("sessionID",sessionID)
                                 //window.location.href='teamCreated.html'
-                                }
+                                                       }
                                 });
-                         });
-        }
+           });
+        }   
 }
    function openEditTeamPage(){
         
