@@ -31,7 +31,7 @@
 
 /*Form Create Team Info*/
 
-.team .field1{
+.team .teamName{
    position: fixed;
     top: 36%;
     left: 22%;
@@ -39,7 +39,7 @@
     height:5%;
 }
 
-.team .field2{
+.team .companyName{
   position: fixed;
     top: 43%;
     left: 22%;
@@ -48,7 +48,7 @@
 
 }
 
-.team .field3{
+.team .teamDescription{
   position: fixed;
     top: 50%;
     left: 22%;
