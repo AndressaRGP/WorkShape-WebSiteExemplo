@@ -11,21 +11,19 @@ function createTeam(){
         alert("You did not fill the team Name  or companyName, Please enter with a name");
     
     }else{
-  
-        $('#create_team_form').submit(function(e){
-                        e.preventDefault();
-                         var sessionID = $.cookie("sessionID")
-                         $.ajax({
-                                type: "POST",
-                                url: "http://192.168.1.147:9000/team/?sessionID="+sessionID,
-                                data: $(this).serialize(),
-                                success: function(msg) {
-                                    $.cookie("teamID",msg.teamID)
-                                    $.cookie("sessionID",sessionID)
-                                //window.location.href='teamCreated.html'
-                                                       }
-                                });
-           });
+               var sessionID = $.cookie("sessionID")
+               $.ajax({
+                      type: "POST",
+                      url: "http://192.168.1.147:9000/team/?sessionID="+sessionID,
+                      data: $('#create_team_form').serialize(),
+                      success: function(msg) {
+                          console.log(msg)
+                          $.cookie("teamID",msg.teamID)
+                          $.cookie("sessionID",sessionID)
+                      //window.location.href='teamCreated.html'
+                      }
+                });
+           
         }   
 }
    function openEditTeamPage(){
