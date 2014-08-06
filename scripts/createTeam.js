@@ -6,7 +6,7 @@ function createTeam(){
     //Get the element with id = "demo"
     
     //If value is apace or not a number
-    if((teamN.trim() == "") || (companyName.trim() == "") || (charityName.trim() == ""))
+    if((teamN.trim() === "") || (companyName.trim() === "") || (charityName.trim() === ""))
     {
         alert("You did not fill the team Name  or companyName, Please enter with a name");
     
@@ -15,16 +15,17 @@ function createTeam(){
                $.ajax({
                       type: "POST",
                       url: "http://192.168.1.147:9000/team/?sessionID="+sessionID,
-                      data: $('#create_team_form').serialize(),
-                      success: function(msg) {
-                          console.log(msg)
-                          $.cookie("teamID",msg.teamID)
-                          $.cookie("sessionID",sessionID)
+                      data: $('#create_team_form').serialize();
+                    });
+
+                      .done(function(msg) {
+                          alert("team saved:" + msg);
+                          $.cookie("teamID",msg.teamID);
+                          $.cookie("sessionID",sessionID);
                       //window.location.href='teamCreated.html'
                       }
-                });
-           
-        }   
+
+          } 
 }
    function openEditTeamPage(){
         
