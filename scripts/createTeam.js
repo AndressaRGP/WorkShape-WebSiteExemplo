@@ -15,9 +15,9 @@ function createTeam(){
                $.ajax({
                       type: "POST",
                       url: "http://192.168.1.147:9000/team/?sessionID="+sessionID,
-                      data: $('#create_team_form').serialize();
+                      data: $('#create_team_form').serialize(),
                       success: function(msg) {
-                          console.log(msg)
+                          alert("team supposedly saved")
                           $.cookie("teamID",msg.teamID)
                           $.cookie("sessionID",sessionID)
                       //window.location.href='teamCreated.html'
