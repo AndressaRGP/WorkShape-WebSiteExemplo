@@ -18,19 +18,18 @@ function createTeam(){
                     dataType:'json',
                     data:{teamName: _teamName,companyName:_companyName,teamDescription:_teamDescription,charityID:_charityID,},
                     success: function(msg) {
-                        alert("team supposedly saved")
                         $.cookie("teamID",msg.teamID)
                         $.cookie("sessionID",sessionID)
+                        alert("team supposedly saved")
                     //window.location.href='teamCreated.html'
                     }
               });
-           
         }   
 }
-   function openEditTeamPage(){
+//   function openEditTeamPage(){
         
-       window.location.href='editTeam.html';
+  //     window.location.href='editTeam.html';
 
-    }
+    //}
 
 
