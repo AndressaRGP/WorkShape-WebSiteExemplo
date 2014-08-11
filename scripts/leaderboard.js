@@ -1,6 +1,10 @@
 var open = true
 $("#createMenu").click(function () {
-  $(".team").stop().animate({top: open ? -1000 : 70}, function() {
-                              open = !open;
-                             })
+	if(open){
+	   $(".team").hide("fast", function() {
+	                          open = !open;
+	                         })
+	}else{
+		   $(".team").show(3000);
+	}
 })
