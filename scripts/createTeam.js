@@ -2,11 +2,11 @@ function createTeam(){
     //Get value of input field with id ="numb"
     var _teamName= document.getElementById("teamName").value;
     var _companyName =document.getElementById("companyName").value; //maybe not, tae it off.
-    var _charityID = document.getElementById("charityName").value;
+    var _charityID = document.getElementById("charityID").value;
     var _teamDescription = document.getElementById("teamDescription").value;
     
     //If value is apace or not a number
-    if((teamN.trim() === "") || (companyName.trim() === "") || (charityName.trim() === ""))
+    if((_teamName.trim() === "") || (_companyName.trim() === "") || (_charityID.trim() === ""))
     {
         alert("You did not fill the team Name  or companyName, Please enter with a name");
     
