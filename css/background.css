@@ -11,20 +11,6 @@ body{
 	background-color:  #CCEEFF;
 }
 
-#external-background{
-		overflow: hidden; /*to dont scroll if the image is bigger than the screen*/
-		width: 100%;
-		height: 100%;
-		position: relative; /*context to positioning */
-
-}
-
-#background: {
-	position: fixed; /* to don't reveal white spaces*/
-	width: 100%;
-	height: 100%;
-}
-
 .waves{
 	position: absolute;
 	bottom:0px;
@@ -199,7 +185,3 @@ body{
 
 
 /*End of the clouds*/
-
-p{
-	margin-bottom: 1.5em;
-}

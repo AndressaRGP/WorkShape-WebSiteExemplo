@@ -1,6 +1,6 @@
 
 .team{
-    position: fixed;
+    position: absolute;
     top:0px;
     right: auto;
     left: 18%;
