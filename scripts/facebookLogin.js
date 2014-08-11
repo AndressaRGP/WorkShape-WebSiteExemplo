@@ -98,21 +98,15 @@ FB.api('/me', function(response){
 //post request, create user or log in 
 
 function loginWorkshape(_userName,faceUID){
-
-        
-                         $.ajax({
-                                type: "POST",
-                                url: "http://192.168.1.147:9000/users",
-                                dataType:'json',
-                                data:{ userName:_userName, fbUID : faceUID},  // falar o que esta enviando
-                                success: function(msg) {
-                                  $.cookie("sessionID",msg.sessionID)  
-                                }
-                                });
-                         
-
-
-
+     $.ajax({
+            type: "POST",
+            url: "http://192.168.1.147:9000/users",
+            dataType:'json',
+            data:{ userName:_userName, fbUID : faceUID},  // falar o que esta enviando
+            success: function(msg) {
+              $.cookie("sessionID",msg.sessionID)  
+            }
+      });
 }
 
 function openCreateTeamPage(){ //check session first
