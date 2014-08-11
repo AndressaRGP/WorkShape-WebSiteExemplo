@@ -86,7 +86,6 @@ FB.api('/me', function(response){
     console.log('Response Face  '+ response); // I am not getting the response
     console.log('faceUID ' + facebookUserID);
     loginWorkshape(userName,facebookUserID);
-
     document.getElementById('status').innerHTML = 
     'thanks for logging in,' + response.name + '!';
    
@@ -104,15 +103,16 @@ function loginWorkshape(_userName,faceUID){
             dataType:'json',
             data:{ userName:_userName, fbUID : faceUID},  // falar o que esta enviando
             success: function(msg) {
-              $.cookie("sessionID",msg.sessionID)  
+              $.cookie("sessionID",msg.sessionID)
+              window.location.href='editUserProfile.html'  
             }
       });
 }
 
-function openCreateTeamPage(){ //check session first
 
-   window.location.href='createTeam.html'
-}
+
+
+
 
 
 
