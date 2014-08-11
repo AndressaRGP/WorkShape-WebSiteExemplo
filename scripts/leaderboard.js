@@ -5,6 +5,7 @@ $("#createMenu").click(function () {
 	                          open = !open;
 	                         })
 	}else{
-		   $(".team").show(3000);
+		   $(".team").show(4000);
+		   open = open;
 	}
 })
