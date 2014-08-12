@@ -1,4 +1,3 @@
-/*reset the margens*/
 *{
     margin: 0;
     padding: 0;
@@ -10,7 +9,6 @@ body{
     font-family: Arial, Tahoma, sans-serif;
     background-color:  #CCEEFF;
 }
-
 .waves{
     position: relative;
     bottom:-700px;
@@ -19,8 +17,6 @@ body{
    /* background-image:url('http://andressargp.github.io/WorkShape-WebSiteExemplo/images/wave4.png');
    background-repeat: repeat-x; */
 }
-
-
 .fline{
     position: relative;
   /*  right: 0%;
@@ -35,7 +31,6 @@ body{
     right: 40px;
     width: 9%;
     height: auto;
-
 }
 .wood1{
     position: absolute;
