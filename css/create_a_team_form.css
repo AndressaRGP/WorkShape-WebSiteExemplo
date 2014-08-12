@@ -1,92 +1,77 @@
 
 .team{
-    position: absolute;
-    top:0px;
+    position: relative;
+    top: -1000px;
     right: auto;
     left: 18%;
     width: 75%;
     height: 100%;
 }
 
-.form{
-    position: relative;
-    right: auto;
-    left: auto;
-    width: 100%;
-    height: 100%;
-
-}
-
-.team .teamInfo{ /*leaderboard*/
-    position: fixed;
-    width: 70%;
+.team .leaderboard{ /*leaderboard*/
+    position: absolute;
+    width: 90%;
     height: auto;
 }
 
 .team .createT{
-    position: fixed;
+    position: absolute;
     font-size: 2em;
-    top: 30%;
-    left: 22%;
+    top: 200px;
+    left: 4%;
 }
 .team .chooseC{
-    position: fixed;
+    position: absolute;
     font-size: 2em;
-    top: 30%;
-    right: 16%;
+    top: 200px;
+    right: 12%;
 
 }
-
 
 /*Form Create Team Info*/
 
 .team .teamName{
-   position: fixed;
-    top: 36%;
-    left: 22%;
+   position: absolute;
+    top: 240px;
+    left: 4%;
     width: 13%;
-    height:5%;
+    height:25px;
 }
 
 .team .companyName{
-  position: fixed;
-    top: 43%;
-    left: 22%;
+   position: absolute;
+    top: 280px;
+    left: 4%;
     width: 13%;
-    height:5%;
-
+    height:25px;
 }
 
 .team .teamDescription{
-  position: fixed;
-    top: 50%;
-    left: 22%;
+    position: absolute;
+    top: 320px;
+    left: 4%;
     width: 13%;
-    height:5%;
-
+    height:25px;
 }
 
 .team .enter{
-    position: fixed;
-    font-size: 0.9em;
-    top: 57%;
-    left: 22%;
-
-}
-
-.team .email{
-  position: fixed;
-    top: 62%;
-    left: 22%;
+    position: absolute;
+    top: 360px;
+    left: 4%;
     width: 13%;
-    height:5%;
-
+    height:25px;
 }
-
+.team .email{
+    position: absolute;
+    top: 400px;
+    left: 4%;
+    width: 13%;
+    height:25px;
+}
 .team .upload{
-   position: fixed;
-    top: 55%;
-    left: 46%;
+    position: absolute;
+    top: 350px;
+    left: 36%;
     font-size: 1em;
     text-align: center;
 }
@@ -95,8 +80,8 @@
 /*Buttons*/
 
 .team .greenButton{
-   position: fixed;
-    top: 75%;
+   position: absolute;
+    top: 550px;
     right: 15%;
     width: 18%;
     height: auto;
@@ -105,9 +90,26 @@
 /*End Button Edition*/
 
 .img-box{
-    position: fixed;
-    top: 60%;
-    right: 42%;
-    width: 12%;
+    position: absolute;
+    top: 400px;
+    right: 46%;
+    width: 17%;
     height: auto;
+}
+
+ .charityID{
+    position: absolute;
+    top: 240px;
+    right: 20%;
+    width: 13%;
+    height:25px;
+}
+
+.click{
+    position: absolute;
+    top: 275px;
+    right: 13%;
+    font-size: 0.9em;
+   
+
 }

@@ -6,26 +6,17 @@
   <link href="css/searchCharity.css" rel="stylesheet" type="text/css"> 
   <link href="css/mug.css" rel="stylesheet" type="text/css"> 
   <link href="css/selection.css" rel="stylesheet" type="text/css"> 
-
 </head>
 <body>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
- <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
- <script src="scripts/createTeam.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+  <script src="scripts/createTeam.js"></script>
    
     <div class = "clouds">
-            <img class ="cloud1" src="images/cloud1.png" alt=""/> 
-            <img class ="cloud2" src="images/cloud1.png" alt=""/> 
-            <img class ="cloud3" src="images/cloud1.png" alt=""/> 
-            <img class ="cloud4" src="images/cloud1.png" alt=""/> 
-
-    </div>
-
-   <div class="fline"> 
-           <img class="finishLine" src="images/finishLine.png">
-           <img class="wood1" src="images/wood.png">
-           <img class="wood2" src="images/wood.png">
-           <img class="wood3" src="images/wood.png">
+        <img class ="cloud1" src="images/cloud1.png" alt=""/> 
+        <img class ="cloud2" src="images/cloud1.png" alt=""/> 
+        <img class ="cloud3" src="images/cloud1.png" alt=""/> 
+        <img class ="cloud4" src="images/cloud1.png" alt=""/> 
     </div>
     
     <div class ="waves">
@@ -36,27 +27,29 @@
         <img class = "fan2" src="images/fan.png">
         <img class = "wave3" src="images/wave4.png">
         <img class = "fan3" src="images/fan.png">
-        <img class = "wave4" src="images/wave4.png">       
+        <img class = "wave4" src="images/wave4.png"> 
+        <div class="fline"> 
+           <img class="finishLine" src="images/finishLine.png">
+           <img class="wood1" src="images/wood.png">
+           <img class="wood2" src="images/wood.png">
+           <img class="wood3" src="images/wood.png">
+       </div>      
     </div>
 
-<div class="team"> 
-  <img class="teamInfo" src="images/leaderboard.png"> 
-  <div class="form">   
+<div class="team">   
+    <img class="leaderboard" src="images/leaderboard.png">
     <p class= "createT"> Create a Team </p>
     <p class= "chooseC"> Choose a Charity </p>
     <p class= "enter"> Enter Team Member's Email</p>
     <p class= "upload">Upload your Company<br>or Team's Logo</p>
-
-    <!-- added action tag solved the 405 error : "post method not allowed"-->
     <input class="teamName" type="text" id="teamName" name="teamName"  size="25" maxlength="60" value="Team Name">
     <input class="companyName" type="text" id="companyName"  name="companyName"  size="25" maxlength= "60" value="Company Name">
     <input class="teamDescription"  type="text" id="teamDescription"  name="teamDescription"    size="25"    maxlength= "60" value="Team Description">
     <input class= "email" type="text" id="email"  name="email"  size="25"   maxlength= "60" value="emails">   
     <input class="charityID"  type="text" id="charityID" name="charityID"  size ="25"      maxlength="60">
-    <p class="click"> Click the charity's name to select who your team will run for!</p>
+    <p class="click"> Click the charity's name to select<br> who your team will run for!</p>
     <input class="greenButton" type="button" onclick="createTeam();" value="Create My Team!"> 
    <img class="img-box" src="images/imgBox.png" alt=""/>
- </div>
 </div>
 
  <div  class="images">
@@ -96,6 +89,5 @@
 
 <!-- END MUG-->
 <script src="scripts/mug.js"></script>
-<script src="scripts/leaderboard.js"></script>
 </body>
 </html>
