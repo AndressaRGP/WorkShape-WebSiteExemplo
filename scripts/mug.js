@@ -2,11 +2,16 @@ $(".menu-opener").click(function(){
   $(".menu-opener, .menu-opener-inner, .menu").toggleClass("active");
 });
 
-var teamContainerOpen = false
 $("#createMenu").click(function () {
-	$(".team").stop().animate({
-		top: teamContainerOpen ? -1000 : 0
+	 window.location.href='createTeam.html';
+});
+
+var profileContainerOpen = false
+$("#myProfileMenu").click(function () {
+	$(".profile").stop().animate({
+		top: profileContainerOpen ? -1000 : 0
 	}, function() {
-		teamContainerOpen = !teamContainerOpen;
+		profileContainerOpen = !profileContainerOpen;
 	})
 })
+
