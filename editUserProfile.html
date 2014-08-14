@@ -5,72 +5,104 @@
   <link href="css/editUserProfile.css" rel="stylesheet" type="text/css"> 
   <link href="css/mug.css" rel="stylesheet" type="text/css"> 
   <link href="css/selection.css" rel="stylesheet" type="text/css"> 
+  <link rel="stylesheet" type="text/css" href="css/editUserProfile.css">
 </head>
 <body>
-      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-      <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-      <script src="scripts/createTeam.js"></script>
-      <div class = "clouds">
-          <img class ="cloud1" src="images/cloud1.png" alt=""/> 
-          <img class ="cloud2" src="images/cloud1.png" alt=""/> 
-          <img class ="cloud3" src="images/cloud1.png" alt=""/> 
-          <img class ="cloud4" src="images/cloud1.png" alt=""/> 
-      </div>
-      <div class="fline"> 
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+   
+    <div class = "clouds">
+        <img class ="cloud1" src="images/cloud1.png" alt=""/> 
+        <img class ="cloud2" src="images/cloud1.png" alt=""/> 
+        <img class ="cloud3" src="images/cloud1.png" alt=""/> 
+        <img class ="cloud4" src="images/cloud1.png" alt=""/> 
+    </div>
+    
+    <div class ="waves">
+        <img class = "fan4" src="images/fan.png">
+        <img class = "wave1" src="images/wave4.png" >
+        <img class = "fan1" src="images/fan.png">
+        <img class = "wave2" src="images/wave4.png">
+        <img class = "fan2" src="images/fan.png">
+        <img class = "wave3" src="images/wave4.png">
+        <img class = "fan3" src="images/fan.png">
+        <img class = "wave4" src="images/wave4.png"> 
+        <div class="fline"> 
            <img class="finishLine" src="images/finishLine.png">
            <img class="wood1" src="images/wood.png">
            <img class="wood2" src="images/wood.png">
            <img class="wood3" src="images/wood.png">
-      </div>
-      <div class ="waves">
-          <img class = "fan4" src="images/fan.png">
-          <img class = "wave1" src="images/wave4.png" >
-          <img class = "fan1" src="images/fan.png">
-          <img class = "wave2" src="images/wave4.png">
-          <img class = "fan2" src="images/fan.png">
-          <img class = "wave3" src="images/wave4.png">
-          <img class = "fan3" src="images/fan.png">
-          <img class = "wave4" src="images/wave4.png">       
-      </div>
-      <div class="userInfo"> 
-        <img class="leaderboard" src="images/leaderboard.png"> 
-        <div class="info">   
-        <p class= "myprof"> My Profile </p>
-        <p class= "myrace"> My Race Results </p>
-        <img class ="fb" src="images/fbook.png" alt="" onclick="checkLoginState();"/>
-        <img class="google" src="images/google.png" alt="" onclick="checkAuth();"/> 
-        <img class="twitter" src="images/twitter.png" alt=""/> 
-      </div>
-         <!-- MUG-->
-        <div class="mug-holder">
-          <nav class="menu-opener">
-            <div class="c1">
-            <div class="menu-opener-inner"></div>
-            </div>
-          </nav>
-          <nav class="menu">
-            <ul class="menu-inner">
-              <a href="#" class="menu-link" id="createMenu">
-                <li>Create a Team</li>
-              </a>
-              <a href="#" class="menu-link" id="editMenu">
-                <li>Edit a Team</li>
-              </a>
-              <a href="#" class="menu-link" id="myProfileMenu">
-                <li>My Profile</li>
-              </a>
-              <a href="#" class="menu-link" id="followMenu">
-                <li>Follow</li>
-              </a>
-              <a href="#" class="menu-link" id="registerMenu">
-              <li>Register a Charity</li>
-              </a>
-            </ul>
-          </nav>
-        </div>
+       </div>      
+    </div>
 
-      <!-- END MUG-->
-         <script src="scripts/mug.js"></script>
-         <script src="scripts/leaderboard.js"></script>
+<div class="profile">   
+      <img class="leaderboard" src="images/leaderboard.png">
+      <p class="my_profile">My Profile</p>
+      <p class="race_results">My Race Results</p>
+      <p class="connected_with">Connected with:</p>
+      <p class="switch_to">Switch to:</p>
+      <p class="my_teams">My Teams:</p>
+      <p class="my_companies">My Companies:</p>
+      <p class="first_race">First Race:</p>
+      <p class="total_races_run">Total Races Run:</p>
+      <p class="best_finish">Best Finish(Team):</p>
+      <p class="average_finish">Average Finish(Team):</p>
+      <p class="change_avatar">Change your avatar</p>
+      <p class="estimated_calories">Estimated Calories <br>Burned Since 1st Race:</p>
+      <img class="fbook_img" src="images/fbook.png"/>
+      <img class="google_img" src="images/google.png"/>
+      <img class="twitter_img" src="images/twitter.png"/>
+      <img class="girl1" src="images/girl1.png"/>
+      <img class="girl2" src="images/girl2.png"/>
+      <img class="girl3" src="images/girl3.png"/>
+      <img class="girl4" src="images/girl4.png"/>
+      <img class="girl5" src="images/girl5.png"/>
+      <img class="guy1" src="images/guy1.png"/>
+      <img class="guy2" src="images/guy2.png"/>
+      <img class="guy3" src="images/guy3.png"/>
+      <img class="guy4" src="images/guy4.png"/>
+      <img class="guy5" src="images/guy5.png"/>
+ 
+</div>
+
+ <div  class="images">
+     <p class="sign_in" > SIGN IN: </p>
+     <img class ="fb" src="images/fbook.png" alt="" onclick="checkLoginState();"/> 
+     <img class="google" src="images/google.png" alt="" onclick="checkAuth();"/> 
+     <img class="twitter" src="images/twitter.png" alt=""/> 
+ </div>
+
+   <!-- MUG-->
+  <div class="mug-holder">
+    <nav class="menu-opener">
+      <div class="c1">
+      <div class="menu-opener-inner"></div>
+      </div>
+    </nav>
+    <nav class="menu">
+      <ul class="menu-inner">
+        <a href="#" class="menu-link" id="createMenu">
+          <li>Create a Team</li>
+        </a>
+        <a href="#" class="menu-link" id="editMenu">
+          <li>Edit a Team</li>
+        </a>
+        <a href="#" class="menu-link" id="myProfileMenu">
+          <li>My Profile</li>
+        </a>
+        <a href="#" class="menu-link" id="followMenu">
+          <li>Follow</li>
+        </a>
+        <a href="#" class="menu-link" id="registerMenu">
+        <li>Register a Charity</li>
+        </a>
+      </ul>
+    </nav>
+  </div>
+<!-- END MUG-->
+<script src="scripts/mug.js"></script>
+<script src="scripts/editUserProfileAnimation.js"></script>
+<script src="scripts/editUserProfile.js"></script>
+
 </body>
 </html>
