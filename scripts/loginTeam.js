@@ -21,7 +21,7 @@ function loginTeam(){
         $.('#edit_Team').on('submit', function(e)){
         $.ajax({
                type:"GET",
-               url: "http://192.168.0.12:8085/team",
+               url: "http://192.168.0.24:8085/team",
                dataType: 'json',
                data: {
                'id' : teamID

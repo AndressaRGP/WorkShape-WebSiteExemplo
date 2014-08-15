@@ -21,7 +21,7 @@ function sendInvitation(){
 
                              $.ajax({
                                     type:"POST",
-                                    url: "http://192.168.0.12:9000/email/" + teamID
+                                    url: "http://192.168.0.24:9000/email/" + teamID
                                      + "?sessionID=" + sessionID,
                                      data: $(this).serialize(),
                                     success: function(){

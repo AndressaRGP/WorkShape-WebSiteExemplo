@@ -4,7 +4,7 @@ $(window).load(function(){
 	var sessionID = $.cookie("sessionID");
 	   $.ajax({
             type: "GET",
-            url: "http://192.168.1.147:9000/users/?sessionID="+sessionID,
+            url: "http://192.168.0.24:9000/users/?sessionID="+sessionID,
             success: function(msg) {
             	console.log(msg);
             	var fbookID = msg.fbUID;
