@@ -86,9 +86,6 @@ FB.api('/me', function(response){
     console.log('Response Face  '+ response); // I am not getting the response
     console.log('faceUID ' + facebookUserID);
     loginWorkshape(userName,facebookUserID);
-    document.getElementById('status').innerHTML = 
-    'thanks for logging in,' + response.name + '!';
-   
 });
 
 }
