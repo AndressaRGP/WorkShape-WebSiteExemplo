@@ -14,7 +14,7 @@ function createTeam(){
              var sessionID = $.cookie("sessionID")
              $.ajax({
                     type: "POST",
-                    url: "http://192.168.0.24:9000/team/?sessionID="+sessionID,
+                    url: "http://192.168.1.147:9000/team/?sessionID="+sessionID,
                     dataType:'json',
                     data:{teamName: _teamName,companyName:_companyName,teamDescription:_teamDescription,charityID:_charityID,},
                     success: function(msg) {

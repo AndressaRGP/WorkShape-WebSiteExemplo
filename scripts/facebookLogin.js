@@ -96,7 +96,7 @@ FB.api('/me', function(response){
 function loginWorkshape(_userName,faceUID){
      $.ajax({
             type: "POST",
-            url: "http://192.168.0.24:9000/users",
+            url: "http://192.168.1.147:9000/users",
             dataType:'json',
             data:{ userName:_userName, fbUID : faceUID},  // falar o que esta enviando
             success: function(msg) {
