@@ -2,7 +2,7 @@
 $(window).load(function(){
 	//ajax method  
 	var sessionID = $.cookie("sessionID");
-	alert("User ID from session" + userID);
+	alert("User ID from session" + sessionID);
 	   $.ajax({
             type: "GET",
             url: "http://192.168.1.147:9000/users/?sessionID="+sessionID,
