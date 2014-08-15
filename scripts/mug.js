@@ -6,12 +6,7 @@ $("#createMenu").click(function () {
 	 window.location.href='createTeam.html';
 });
 
-var profileContainerOpen = false
 $("#myProfileMenu").click(function () {
-	$(".profile").stop().animate({
-		top: profileContainerOpen ? -1000 : 0
-	}, function() {
-		profileContainerOpen = !profileContainerOpen;
-	})
+	window.location.href='editUserProfile.html';
 })
 

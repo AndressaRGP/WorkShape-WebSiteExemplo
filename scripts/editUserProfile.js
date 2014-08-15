@@ -1,5 +1,12 @@
 //do get request to get the type of social media and show in the design
 $(window).load(function(){
+	var profileContainerOpen = false;
+	$(".profile").stop().animate({
+		top: profileContainerOpen ? -1000 : 0
+	}, function() {
+		profileContainerOpen = !profileContainerOpen;
+	})
+
 	//ajax method  
 	var sessionID = $.cookie("sessionID");
 	   $.ajax({
