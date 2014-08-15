@@ -12,20 +12,20 @@ $(window).load(function(){
             	var googleID = msg.googleUID;
             	var twitterID = msg.twitterUID;
 
-       			if(fbookID != undefined){
+       			if(fbookID !== undefined){
 					 $(".fbook_img").animate({
 							left:"17%",
 							top:"270px",
 						});
 
 					}else
-					if(googleID != undefined){
+					if(googleID !== undefined){
 					   $(".google_img").animate({
 							left:"17%",
 							top:"270px",
 						  });
 					}else
-					if(twitterID != undefined){
+					if(twitterID !== undefined){
 						 $(".twitter_img").animate({
 								left:"17%",
 								top:"270px",
