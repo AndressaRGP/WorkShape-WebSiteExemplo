@@ -104,7 +104,8 @@ function loginWorkshape(_userName,faceUID){
             data:{ userName:_userName, fbUID : faceUID},  // falar o que esta enviando
             success: function(msg) {
               $.cookie("sessionID",msg.sessionID)
-              window.location.href='editUserProfile.html'  
+              $.cookie("userName",_userName);
+              window.location.href='index2.html'  
             }
       });
 }

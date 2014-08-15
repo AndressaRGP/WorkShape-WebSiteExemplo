@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <meta charset="UTF-8">
+    <script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
+    <link href="css/background.css" rel="stylesheet" type="text/css"> 
+    <link href="css/selection.css" rel="stylesheet" type="text/css"> 
+    
+</head>
+<body>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <div id="fb-root"></div>
+    <script src="scripts/facebookLogin.js"></script>
+    <script src="scripts/googleLogin.js"></script>
+
+      <div class = "clouds">
+            <img class ="cloud1" src="images/cloud1.png" alt=""/> 
+            <img class ="cloud2" src="images/cloud1.png" alt=""/> 
+            <img class ="cloud3" src="images/cloud1.png" alt=""/> 
+            <img class ="cloud4" src="images/cloud1.png" alt=""/> 
+
+    </div>
+
+        <div  class="images">
+             <p class="sign_in" > SIGN IN: </p>
+             <img class ="fb" src="images/fbook.png" alt="" onclick="checkLoginState();"/> 
+             <img class="google" src="images/google.png" alt="" onclick="checkAuth();"/> 
+             <img class="twitter" src="images/twitter.png" alt=""/> 
+
+        </div>
+
+     <div class="fline"> 
+           <img class="finishLine" src="images/finishLine.png">
+           <img class="wood1" src="images/wood.png">
+           <img class="wood2" src="images/wood.png">
+           <img class="wood3" src="images/wood.png">
+    </div>
+    
+    <div class ="waves">
+        <img class = "fan4" src="images/fan.png">
+        <img class = "wave1" src="images/wave4.png" >
+        <img class = "fan1" src="images/fan.png">
+        <img class = "wave2" src="images/wave4.png">
+        <img class = "fan2" src="images/fan.png">
+        <img class = "wave3" src="images/wave4.png">
+        <img class = "fan3" src="images/fan.png">
+        <img class = "wave4" src="images/wave4.png">
+                        
+    </div>
+    
+ <div class="logo"> 
+   <img class="people" src="images/logo.png">   
+ </div>
+
+   <!-- MUG-->
+  <div class="mug-holder">
+    <nav class="menu-opener">
+      <div class="c1">
+      <div class="menu-opener-inner"></div>
+      </div>
+    </nav>
+    <nav class="menu">
+      <ul class="menu-inner">
+        <a href="#" class="menu-link" id="createMenu">
+          <li>Create a Team</li>
+        </a>
+        <a href="#" class="menu-link" id="editMenu">
+          <li>Edit a Team</li>
+        </a>
+        <a href="#" class="menu-link" id="myProfileMenu">
+          <li>My Profile</li>
+        </a>
+        <a href="#" class="menu-link" id="followMenu">
+          <li>Follow</li>
+        </a>
+        <a href="#" class="menu-link" id="registerMenu">
+        <li>Register a Charity</li>
+        </a>
+      </ul>
+    </nav>
+  </div>
+
+<!-- END MUG-->
+<script src="scripts/mug.js"></script>
+<script type="text/javascript" src="scripts/index2.js"></script>
+
+</body>
+</html>
