@@ -1,0 +1,193 @@
+
+.profile{
+    position: relative;
+    top: -1000px;
+    right: auto;
+    left: 18%;
+    width: 75%;
+    height: auto;
+}
+
+/*.p{
+	position: relative;
+	top:200px;
+	width:90%;
+	height:100%;
+} */
+
+.profile .leaderboard{ /*leaderboard*/
+    position: absolute;
+    width: 90%;
+    height: auto;
+}
+.my_profile{
+	position: absolute;
+	top:210px;
+	left: 10%;
+	font-size: 2em;
+}
+.race_results{
+	position: absolute;
+	top:210px;
+	right: 15%;
+	font-size: 2em;
+}
+.connected_with{
+	position: absolute;
+	top:290px;
+	left: 3%;
+}
+
+.switch_to{
+	position: absolute;
+	top:340px;
+	left: 3%;
+}
+
+ .my_teams{
+	position: absolute;
+	top:390px;
+	left: 3%;
+}
+
+.my_companies{
+	position: absolute;
+	top:440px;
+	left: 3%;
+}
+
+ .change_avatar{
+	position: absolute;
+	top:350px;
+	left: 38%;
+	right: auto;
+}
+
+/*Race Results*/
+
+ .first_race{
+	position: absolute;
+	top:290px;
+	right: 25%;
+}
+
+.total_races_run{
+	position: absolute;
+	top:340px;
+	right: 25%;
+}
+
+.best_finish{
+	position: absolute;
+	top:390px;
+	right: 25%;
+}
+
+.average_finish{
+	position: absolute;
+	top:440px;
+	right: 25%;
+}
+
+.estimated_calories{
+	position: absolute;
+	top:490px;
+	right: 25%;
+}
+
+/*Images*/
+
+.fbook_img{
+	position: absolute;
+	width: 5%;
+	height:auto;
+	top:330px;
+	left:12%;
+}
+.google_img{
+	position: absolute;
+	width: 5%;
+	height:auto;
+	top:330px;
+	left:18%;
+}
+.twitter_img{
+	position: absolute;
+	width: 5%;
+	height:auto;
+	top:330px;
+	left:24%;
+}
+
+.girl1{
+	position: absolute;
+	width: 3%;
+	height:auto;
+	top:480px;
+	left:37%;
+}
+.girl2{
+	position: absolute;
+	width: 3%;
+	height:auto;
+	top:480px;
+	left:40%;
+}
+.girl3{
+    position: absolute;
+	width: 3%;
+	height:auto;
+	top:480px;
+	left:43%;
+}
+.girl4{
+	position: absolute;
+	width: 3%;
+	height:auto;
+	top:480px;
+	left:46%;
+}
+.girl5{
+    position: absolute;
+	width: 3%;
+	height:auto;
+	top:480px;
+	left:49%;
+}
+
+.guy1{
+	position: absolute;
+	width: 3%;
+	height:auto;
+	top:530px;
+	left:37%;
+}
+.guy2{
+	position: absolute;
+	width: 3%;
+	height:auto;
+	top:530px;
+	left:40%;
+}
+.guy3{
+	position: absolute;
+	width: 3%;
+	height:auto;
+	top:530px;
+	left:43%;
+}
+.guy4{
+	position: absolute;
+	width: 3%;
+	height:auto;
+	top:530px;
+	left:46%;
+}
+.guy5{
+	position: absolute;
+	width: 3%;
+	height:auto;
+	top:530px;
+	left:49%;
+}
+
