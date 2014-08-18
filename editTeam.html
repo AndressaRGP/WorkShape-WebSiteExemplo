@@ -1,55 +1,93 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title> WORKSHAPE _ Edit Team</title>
-    <meta charset="UTF-8">
-<link href="css/background.css" rel="stylesheet" type="text/css"> 
+<head> 
+  <link href="css/background.css" rel="stylesheet" type="text/css"> 
+  <link href="css/create_a_team_form.css" rel="stylesheet" type="text/css"> 
+  <link href="css/searchCharity.css" rel="stylesheet" type="text/css"> 
+  <link href="css/mug.css" rel="stylesheet" type="text/css"> 
+  <link href="css/selection.css" rel="stylesheet" type="text/css"> 
 </head>
-<body>
+<body>   
+    <div class = "clouds">
+        <img class ="cloud1" src="images/cloud1.png" alt=""/> 
+        <img class ="cloud2" src="images/cloud1.png" alt=""/> 
+        <img class ="cloud3" src="images/cloud1.png" alt=""/> 
+        <img class ="cloud4" src="images/cloud1.png" alt=""/> 
+    </div>
     
-<h1> <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
- <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-</h1>
-
-<p>Edit your team Group: </p>
-
-<form id="edit_Team" method ="PUT" action="" >
-<input type="file" id="teamLogo"name= "teamLogo" />
-<output id ="list"></output>
-    <p>Team Name: <input id = "teamName" type="text" name ="teamName" value "" size ="25" maxlength = "60"
-    </p>
-    <p> Team Description : <input id = "teamDescription" type="text" name="teamDescription" size ="50"
-    </p>
-    <p> Charity : <input id = "teamCharity" type="text" name="teamCharity" size ="50"
-    </p>
-    <p> <INPUT type="submit" onclick="editTeam()" name='submit' value ='Salve Edition'/>
-   </p>
-<script src="scripts/editTeam.js"></script>
-
-</form>
-
-<form id="add_Emails" method ="POST" action="">
-    
-    <textarea rows="5" cols="50" name="email">Put the emails here...
-    </textarea>
-        
-        <p>
-        <INPUT type="submit" onclick="sendInvitation()" name='sendInvitationButton' value ='Send Invitation'/>
-        </p>
-            
-            
-</form>
-
-
-<script src="scripts/editTeam.js"></script>
-<script src="scripts/sendInvitation.js"></script>
-
-<div class='wrapper'>
-        <img class="background-cloud cloud1" src="images/cloud.png">
-        <img class="background-cloud cloud2" src="images/cloud.png">
-        <img class="background-cloud cloud3" src="images/cloud.png">
-        <img class="logo" src="images/logo.png">
+    <div class ="waves">
+        <img class = "fan4" src="images/fan.png">
+        <img class = "wave1" src="images/wave4.png" >
+        <img class = "fan1" src="images/fan.png">
+        <img class = "wave2" src="images/wave4.png">
+        <img class = "fan2" src="images/fan.png">
+        <img class = "wave3" src="images/wave4.png">
+        <img class = "fan3" src="images/fan.png">
+        <img class = "wave4" src="images/wave4.png"> 
+        <div class="fline"> 
+           <img class="finishLine" src="images/finishLine.png">
+           <img class="wood1" src="images/wood.png">
+           <img class="wood2" src="images/wood.png">
+           <img class="wood3" src="images/wood.png">
+       </div>      
     </div>
 
+<div class="team">   
+    <img class="leaderboard" src="images/leaderboard.png">
+    <p class= "createT"> Edit your Team </p>
+    <p class= "chooseC"> Edit your Charity </p>
+    <p class= "enter"> Enter Team Member's Email</p>
+    <p class= "upload">Upload your Company<br>or Team's Logo</p>
+    <input class="teamName" type="text" id="teamName" name="teamName"  size="25" maxlength="60" value="Team Name">
+    <input class="companyName" type="text" id="companyName"  name="companyName"  size="25" maxlength= "60" value="Company Name">
+    <input class="teamDescription"  type="text" id="teamDescription"  name="teamDescription"    size="25"    maxlength= "60" value="Team Description">
+    <input class= "email" type="text" id="email"  name="email"  size="25"   maxlength= "60" value="emails">   
+    <input class="charityID"  type="text" id="charityID" name="charityID"  size ="25"      maxlength="60">
+    <p class="click"> Click the charity's name to select<br> who your team will run for!</p>
+    <input class="greenButton" type="button" onclick="createTeam();" value="Create My Team!">
+    <input class="upload-area" type="file" size="20"> 
+   <img class="img-box" src="images/imgBox.png" alt=""/>
+</div>
+
+ <div  class="images">
+             <p class="sign_in" > SIGN IN: </p>
+             <img class ="fb" src="images/fbook.png" alt="" onclick="checkLoginState();"/> 
+             <img class="google" src="images/google.png" alt="" onclick="checkAuth();"/> 
+             <img class="twitter" src="images/twitter.png" alt=""/> 
+ </div>
+
+   <!-- MUG-->
+  <div class="mug-holder">
+    <nav class="menu-opener">
+      <div class="c1">
+      <div class="menu-opener-inner"></div>
+      </div>
+    </nav>
+    <nav class="menu">
+      <ul class="menu-inner">
+        <a href="#" class="menu-link" id="createMenu">
+          <li>Create a Team</li>
+        </a>
+        <a href="#" class="menu-link" id="editMenu">
+          <li>Edit a Team</li>
+        </a>
+        <a href="#" class="menu-link" id="myProfileMenu">
+          <li>My Profile</li>
+        </a>
+        <a href="#" class="menu-link" id="followMenu">
+          <li>Follow</li>
+        </a>
+        <a href="#" class="menu-link" id="registerMenu">
+        <li>Register a Charity</li>
+        </a>
+      </ul>
+    </nav>
+  </div>
+
+    <!-- END MUG-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="scripts/mug.js"></script>
+    <script src="scripts/createTeam.js"></script>
 </body>
 </html>

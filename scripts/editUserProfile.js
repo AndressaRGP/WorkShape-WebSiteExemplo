@@ -45,4 +45,6 @@ $(window).load(function(){
       });
 });
 
-
+function changeAvatar(){
+	
+}

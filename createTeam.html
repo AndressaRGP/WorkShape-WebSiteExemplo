@@ -7,11 +7,7 @@
   <link href="css/mug.css" rel="stylesheet" type="text/css"> 
   <link href="css/selection.css" rel="stylesheet" type="text/css"> 
 </head>
-<body>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-  <script src="scripts/createTeam.js"></script>
-   
+<body>   
     <div class = "clouds">
         <img class ="cloud1" src="images/cloud1.png" alt=""/> 
         <img class ="cloud2" src="images/cloud1.png" alt=""/> 
@@ -48,7 +44,8 @@
     <input class= "email" type="text" id="email"  name="email"  size="25"   maxlength= "60" value="emails">   
     <input class="charityID"  type="text" id="charityID" name="charityID"  size ="25"      maxlength="60">
     <p class="click"> Click the charity's name to select<br> who your team will run for!</p>
-    <input class="greenButton" type="button" onclick="createTeam();" value="Create My Team!"> 
+    <input class="greenButton" type="button" onclick="createTeam();" value="Create My Team!">
+    <input class="upload-area" type="file" size="20"> 
    <img class="img-box" src="images/imgBox.png" alt=""/>
 </div>
 
@@ -87,7 +84,10 @@
     </nav>
   </div>
 
-<!-- END MUG-->
-<script src="scripts/mug.js"></script>
+    <!-- END MUG-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="scripts/mug.js"></script>
+    <script src="scripts/createTeam.js"></script>
 </body>
 </html>
