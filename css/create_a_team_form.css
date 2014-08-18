@@ -95,6 +95,13 @@
     width: 17%;
     height: auto;
 }
+.upload-area{
+    position: absolute;
+    top: 550px;
+    right: 46%;
+    width: 17%;
+    height: auto;
+}
 
  .charityID{
     position: absolute;
