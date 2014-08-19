@@ -34,16 +34,6 @@ function createTeam(){
         }   
 }
 
-var teamContainerOpen = false;
-$(window).load(function(){
-    $(".team").stop().animate({
-        top: teamContainerOpen ? -1000 : 0
-    }, function() {
-        teamContainerOpen = !teamContainerOpen;
-    })
-})
-
-
 function addImage(imagePath, teamID){
             $.ajax({
                 type: "PUT",
@@ -56,3 +46,12 @@ function addImage(imagePath, teamID){
                    console.log("Image of the team saved")
                 }
 }
+
+var teamContainerOpen = false;
+$(window).load(function(){
+    $(".team").stop().animate({
+        top: teamContainerOpen ? -1000 : 0
+    }, function() {
+        teamContainerOpen = !teamContainerOpen;
+    })
+})
