@@ -35,16 +35,17 @@ function createTeam(){
 }
 
 function addImage(imagePath, teamID){
-            $.ajax({
-                type: "PUT",
-                url: "http://192.168.0.24:9000/team/" +teamID,
-                dataType:'json',
-                data:{
-                    profileImage: imagePath
-                },
-                success: function(msg) {
-                   console.log("Image of the team saved")
-                }
+    $.ajax({
+        type: "PUT",
+        url: "http://192.168.0.24:9000/team/" +teamID,
+        dataType:'json',
+        data:{
+            profileImage: imagePath
+        },
+        success: function(msg) {
+           console.log("Image of the team saved")
+        }
+    })
 }
 
 var teamContainerOpen = false;
