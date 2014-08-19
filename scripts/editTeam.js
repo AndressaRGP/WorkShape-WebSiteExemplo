@@ -6,7 +6,8 @@ function editTeam(){ //how to do this int the HTML side?
     var teamDescription = document.getElementById("teamDescription").value;
     var teamCharity = document.getElementById("teamCharity").value;
     var teamLogo = document.getElementById("teamLogo").value;
-    
+    var profileImage = document.getElementById("upload-area").value; //it is not value, because it is an image
+     
     
     //If value is apace or not a number
     if((teamDescription.trim() == ""))
