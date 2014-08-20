@@ -4,7 +4,7 @@ function createTeam(){
     var _companyName =document.getElementById("companyName").value; //maybe not, tae it off.
     var _charityID = document.getElementById("charityID").value;
     var _teamDescription = document.getElementById("teamDescription").value;
-      var profileImage = document.getElementById("upload-area").value; //PATH of the Image
+    var profileImage = document.getElementById("upload-area").value; //PATH of the Image
     
     //If value is apace or not a number
     if((_teamName.trim() === "") || (_companyName.trim() === "") || (_charityID.trim() === ""))
@@ -26,7 +26,6 @@ function createTeam(){
                 success: function(msg) {
                     $.cookie("teamID",msg.teamID)
                     $.cookie("sessionID",sessionID)
-                    addImage(profileImage,msg.teamID)
                     alert("team supposedly saved")
                 //window.location.href='teamCreated.html'
                 }
@@ -34,19 +33,6 @@ function createTeam(){
         }   
 }
 
-function addImage(imagePath, teamID){
-    $.ajax({
-        type: "PUT",
-        url: "http://192.168.0.24:9000/team/" +teamID,
-        dataType:'json',
-        data:{
-            profileImage: imagePath
-        },
-        success: function(msg) {
-           console.log("Image of the team saved")
-        }
-    })
-}
 
 var teamContainerOpen = false;
 $(window).load(function(){
