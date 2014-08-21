@@ -44,3 +44,11 @@ function editTeam(){ //how to do this int the HTML side?
 }
 
 
+var teamContainerOpen = false;
+$(window).load(function(){
+    $(".team").stop().animate({
+        top: teamContainerOpen ? -1000 : 0
+    }, function() {
+        teamContainerOpen = !teamContainerOpen;
+    })
+})
