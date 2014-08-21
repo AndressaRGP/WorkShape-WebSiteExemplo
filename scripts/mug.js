@@ -10,3 +10,6 @@ $("#myProfileMenu").click(function () {
 	window.location.href='editUserProfile.html';
 })
 
+$("#editMenu").click(function(){
+	window.location.href = 'editTeam.html';
+})
