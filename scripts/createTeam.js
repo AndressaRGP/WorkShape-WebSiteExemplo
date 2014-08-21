@@ -4,7 +4,7 @@ function createTeam(){
     var _companyName =document.getElementById("companyName").value; //maybe not, tae it off.
     var _charityID = document.getElementById("charityID").value;
     var _teamDescription = document.getElementById("teamDescription").value;
-    var profileImage = document.getElementById("upload-area").value; //PATH of the Image
+    var _profileImage = document.getElementById("upload-area").value; //PATH of the Image
     
     //If value is apace or not a number
     if((_teamName.trim() === "") || (_companyName.trim() === "") || (_charityID.trim() === ""))
@@ -21,7 +21,8 @@ function createTeam(){
                     teamName: _teamName,
                     companyName:_companyName,
                     teamDescription:_teamDescription,
-                    charityID:_charityID
+                    charityID:_charityID,
+                    profileImage:_profileImage
                 },
                 success: function(msg) {
                     $.cookie("teamID",msg.teamID)
