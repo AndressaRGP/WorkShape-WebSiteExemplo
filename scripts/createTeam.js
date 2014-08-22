@@ -39,7 +39,7 @@ function retrieveCharity(){
         type:"GET",
         url: "http://192.168.1.147:9000/charity",
         success: function(data){
-             data.forEach(function(charityName){
+             data.charities.forEach(function(charityName){
                  $(".charity-names").append("<li>"+charityName+"</li>");
              })
         }
