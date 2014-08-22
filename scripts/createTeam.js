@@ -51,6 +51,7 @@ $(window).load(function(){
     $(".team").stop().animate({
         top: teamContainerOpen ? -1000 : 0
     }, function() {
+        retrieveCharity();
         teamContainerOpen = !teamContainerOpen;
     })
 })
