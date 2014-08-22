@@ -34,6 +34,17 @@ function createTeam(){
         }   
 }
 
+function retrieveCharity(){
+    $.ajax({
+        type:"GET",
+        url: "http://192.168.1.147:9000/charity",
+        success: function(data){
+            $(".charity-ul").children().each(function(data){
+                $(this).prepend('<li>'+data+'</li>');
+            })
+        }
+    })
+}
 
 var teamContainerOpen = false;
 $(window).load(function(){
