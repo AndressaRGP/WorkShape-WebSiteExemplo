@@ -116,6 +116,15 @@
     top: 275px;
     right: 13%;
     font-size: 0.9em;
-   
 
+}
+
+.charity-names{
+    position: absolute;
+    top: 350px;
+    right: 17%;
+    font-size: 0.9em;
+    width: 25%;
+    height:auto;
+    overflow: scroll;
 }

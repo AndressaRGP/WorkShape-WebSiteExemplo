@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* guarantee that the elements will fill all the screen */
+body{
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Tahoma, sans-serif;
+    background-color:  #CCEEFF;
+}
+.waves{
+    position: relative;
+    bottom:-700px;
+    width: 100%;
+    height: 65%;
+   /* background-image:url('http://andressargp.github.io/WorkShape-WebSiteExemplo/images/wave4.png');
+   background-repeat: repeat-x; */
+}
+.fline{
+    position: relative;
+  /*  right: 0%;
+    bottom:0px;
+    width: 20%;
+    height: 70%;*/
+}
+
+.finishLine{
+    position: absolute;
+    bottom: 255px;
+    right: 40px;
+    width: 9%;
+    height: auto;
+}
+.wood1{
+    position: absolute;
+    bottom: 160px;
+    right: 40px;
+    width: 9%;
+    height: auto;
+}
+
+.wood2{
+    position: absolute;
+    bottom: 80px;
+    right: 40px;
+    width: 9%;
+    height: auto;
+}
+
+ .wood3{
+    position: absolute;
+    bottom: 0px;
+    right: 40px;
+    width: 9%;
+    height: auto;
+}
+
+.waves .wave4{
+    position: absolute;
+    bottom: -30px;
+
+}
+.waves .wave3{
+    position: absolute;
+    bottom: 40px;
+
+}
+.waves .wave2{
+    position: absolute;
+    bottom: 110px;
+
+}
+.waves .wave1{
+    position: absolute;
+    bottom: 180px;
+
+}
+
+.waves .fan4{
+    position: absolute;
+    bottom: 260px;
+    width: 10%;
+    height: auto;
+
+}
+.waves .fan3{
+    position: absolute;
+    bottom: 50px;
+    width: 10%;
+    height: auto;
+
+}
+.waves .fan2{
+    position: absolute;
+    bottom: 120px;
+    width: 10%;
+    height: auto;
+}
+.waves .fan1{
+    position: absolute;
+    bottom: 190px;
+     width: 10%;
+    height: auto;
+
+}
+
+ .images .sign_in{
+    position: absolute;
+    top: 40px;
+    right: 200px;
+    font-size: 2em;
+}
+
+
+ .images .fb{
+    position: absolute;
+    top: 80px;
+    right: 300px;
+    
+}
+ .images .twitter{
+    position: absolute;
+    top: 80px;
+    right: 200px;
+}
+
+ .images .google{
+    position: absolute;
+    top: 80px;
+    right: 100px;
+}
+
+/*Clouds*/
+
+.clouds .cloud1{
+    position: absolute;
+    top: 50px;
+    left: 40px;
+    width: 25%;
+    height: auto;
+
+}
+
+.clouds .cloud2{
+    position: absolute;
+    top: 120px;
+    left: 350px;
+    width: 30%;
+    height: auto;
+}
+.clouds .cloud3{
+    position: absolute;
+    top: 40px;
+    right: 250px;
+    width: 25%;
+    height: auto;
+}
+.clouds .cloud4{
+    position: absolute;
+    top: 170px;
+    right: -120px;
+    width: 25%;
+    height: auto;
+}
+
+.logo{
+    position: relative;
+    top: 150px;
+    left: 35%;
+}
+
+.logo .people{
+    position: absolute;
+    width: 35%;
+    height: auto;
+    left: auto;
+    right: auto;
+}
+
+
+/*End of the clouds*/
