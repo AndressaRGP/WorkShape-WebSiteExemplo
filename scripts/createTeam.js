@@ -37,7 +37,7 @@ function createTeam(){
 function retrieveCharity(){
     $.ajax({
         type:"GET",
-        url: "http://192.168.1.147:9000/charity",
+        url: "http://192.168.0.24:9000/charity",
         success: function(data){
              data.charities.forEach(function(charityName){
                  $(".charity-ul").append("<li>"+charityName+"</li>");
