@@ -39,8 +39,8 @@ function retrieveCharity(){
         type:"GET",
         url: "http://192.168.0.24:9000/charity",
         success: function(data){
-             data.charities.forEach(function(charityName){
-                 $(".charity-ul").append("<li>"+charityName+"</li>");
+             data.charities.forEach(function(charity){
+                 $(".charity-ul").append("<li>"+charity.charities.teamName+"</li>");
              })
         }
     })
