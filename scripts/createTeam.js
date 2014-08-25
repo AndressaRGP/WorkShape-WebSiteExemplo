@@ -40,7 +40,7 @@ function retrieveCharity(){
         url: "http://192.168.1.147:9000/charity",
         success: function(data){
              data.charities.forEach(function(charityName){
-                 $(".charity-names").append("<li>"+charityName+"</li>");
+                 $(".charity-ul").append("<li>"+charityName+"</li>");
              })
         }
     })
