@@ -71,7 +71,6 @@ function sendInvitation(teamID, adminName,teamName){
                 data:{
                     teamName: teamName,
                     adminName:adminName, 
-                    teamID:teamID,
                     emails: emailList
                 },
                 success: function(msg) {
