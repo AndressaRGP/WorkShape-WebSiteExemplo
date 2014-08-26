@@ -59,8 +59,9 @@ function retrieveTeam(){
 }
 
 
-$(".email").keypress(function(event){
-    if(event.which == 13){
+$("#email").keypress(function(event){
+    var keycode = (event.keyCode ? event.keyCode : event.which);
+    if(keycode == 13){
         event.preventDefault();
         var email = document.getElementById("email").value;
         if(email >0){
