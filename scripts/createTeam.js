@@ -27,8 +27,8 @@ function createTeam(){
                 success: function(msg) {
                     $.cookie("teamID",msg.teamID)
                     $.cookie("sessionID",sessionID)
+                    sendInvitation(msg.teamID,_companyName,teamName);
                     alert("team supposedly saved")
-                //window.location.href='teamCreated.html'
                 }
           });
         }   
@@ -56,6 +56,28 @@ function retrieveTeam(){
              })
         }
     })
+}
+
+function sendInvitation(teamID, adminName,teamName){
+        var emailList = [];
+        $(".emails-ul").children("li").each(function(){
+            emailList.push($(this).text());
+            alert("List "+emailList)
+        });
+      $.ajax({
+                type: "POST",
+                url: "http://192.168.0.24:9000/email/"+teamID,
+                dataType:'json',
+                data:{
+                    teamName: teamName,
+                    adminName:adminName, 
+                    teamID:teamID,
+                    emails: emailList
+                },
+                success: function(msg) {
+                   
+                }
+          });
 }
 
 
