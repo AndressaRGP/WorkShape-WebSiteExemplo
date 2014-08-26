@@ -59,7 +59,7 @@ function retrieveTeam(){
 }
 
 
-$(".email").keyup(function(event){
+$(".email").keypress(function(event){
     if(event.which == 13){
         event.preventDefault();
         var email = document.getElementById("email").value;
