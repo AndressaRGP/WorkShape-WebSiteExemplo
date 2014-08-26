@@ -58,6 +58,16 @@ function retrieveTeam(){
     })
 }
 
+
+$(".email").keyup(function(event){
+    if(event.which == 13){
+        var email = document.getElementById("email").value;
+        if(email >0){
+          $(".emails-ul").append("<li>"+email+"</li>");
+        }
+    }  
+})
+
 var teamContainerOpen = false;
 $(window).load(function(){
     $(".team").stop().animate({
