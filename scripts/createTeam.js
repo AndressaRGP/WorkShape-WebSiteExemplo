@@ -61,6 +61,7 @@ function retrieveTeam(){
 
 $(".email").keyup(function(event){
     if(event.which == 13){
+        event.preventDefault();
         var email = document.getElementById("email").value;
         if(email >0){
           $(".emails-ul").append("<li>"+email+"</li>");
