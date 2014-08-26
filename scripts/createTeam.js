@@ -46,10 +46,22 @@ function retrieveCharity(){
     })
 }
 
+function retrieveTeam(){
+    $.ajax({
+        type:"GET",
+        url: "http://192.168.0.24:9000/team",
+        success: function(data){
+             data.teams.forEach(function(team){
+                 $(".teams-ul").append("<li>"+team.teamName+"</li>");
+             })
+        }
+    })
+}
+
 var teamContainerOpen = false;
 $(window).load(function(){
     $(".team").stop().animate({
-        top: teamContainerOpen ? -1000 : 0
+        top: teamContainerOpen ? -1000 : 0  
     }, function() {
         retrieveCharity();
         teamContainerOpen = !teamContainerOpen;
