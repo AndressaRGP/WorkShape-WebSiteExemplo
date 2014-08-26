@@ -130,10 +130,10 @@
 }
 .emails-names{
     position: absolute;
-    top: 450px;
+    top: 440px;
     left: 4%;
     font-size: 0.9em;
     width: 20%;
-    height:150px;;
+    height:130px;;
     overflow: scroll;
 }

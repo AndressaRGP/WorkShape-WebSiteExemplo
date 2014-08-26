@@ -65,7 +65,6 @@ $("#email").keypress(function(event){
         event.preventDefault();
         var email = document.getElementById("email").value;
         if(email.trim() !== ""){
-            alert("Palavra digitada "+  email)
           $(".emails-ul").append("<li>"+email+"</li>");
         }
     }  
