@@ -71,7 +71,7 @@ function sendInvitation(teamID, adminName,teamName){
                 data:{
                     teamName: teamName,
                     adminName:adminName, 
-                    emails: emailList
+                    emails: "argomes@lakeheadu.ca"
                 },
                 success: function(msg) {
                    
