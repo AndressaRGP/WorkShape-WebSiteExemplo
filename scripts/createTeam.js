@@ -61,10 +61,11 @@ function retrieveTeam(){
 
 $("#email").keypress(function(event){
     var keycode = (event.keyCode ? event.keyCode : event.which);
-    if(keycode == 13){
+    if(keycode == '13'){
         event.preventDefault();
         var email = document.getElementById("email").value;
-        if(email >0){
+        if(email.trim() !== ""){
+            alert("Palavra digitada "+  email)
           $(".emails-ul").append("<li>"+email+"</li>");
         }
     }  
