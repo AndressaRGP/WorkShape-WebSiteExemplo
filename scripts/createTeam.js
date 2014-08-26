@@ -64,6 +64,7 @@ $(window).load(function(){
         top: teamContainerOpen ? -1000 : 0  
     }, function() {
         retrieveCharity();
+        retrieveTeam();
         teamContainerOpen = !teamContainerOpen;
     })
 })
