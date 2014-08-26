@@ -27,7 +27,8 @@ function createTeam(){
                 success: function(msg) {
                     $.cookie("teamID",msg.teamID)
                     $.cookie("sessionID",sessionID)
-                    sendInvitation(msg.teamID,_companyName,teamName);
+                    var teamID = msg.teamID;
+                    sendInvitation(teamID,_companyName,teamName);
                     alert("team supposedly saved")
                 }
           });
@@ -61,13 +62,13 @@ function retrieveTeam(){
 function sendInvitation(teamID, adminName,teamName){
         var emailList = [];
         $(".emails-ul").children("li").each(function(){
-            emailList.push($(this).text());
-            alert("List "+emailList)
+            emailList.push($(this).value);
         });
       $.ajax({
                 type: "POST",
                 url: "http://192.168.0.24:9000/email/"+teamID,
                 dataType:'json',
+                contentType: false,
                 data:{
                     teamName: teamName,
                     adminName:adminName, 
