@@ -28,7 +28,7 @@ function createTeam(){
                     $.cookie("teamID",msg.teamID)
                     $.cookie("sessionID",sessionID)
                     var teamID = msg.teamID;
-                    sendInvitation(teamID,_companyName,teamName);
+                    sendInvitation(teamID,_companyName,_teamName);
                     alert("team supposedly saved")
                 }
           });
