@@ -62,7 +62,7 @@ function retrieveTeam(){
 function sendInvitation(teamID, adminName,teamName){
         var emailList = [];
         $(".emails-ul").children("li").each(function(){
-            emailList.push($(this).value);
+            emailList.push($(this).val());
         });
       $.ajax({
                 type: "POST",
@@ -71,8 +71,7 @@ function sendInvitation(teamID, adminName,teamName){
                 contentType: false,
                 data:{
                     teamName: teamName,
-                    adminName:adminName, 
-                    emails: "argomes@lakeheadu.ca"
+                    adminName:adminName
                 },
                 success: function(msg) {
                    
