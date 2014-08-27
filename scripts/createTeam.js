@@ -64,14 +64,15 @@ function sendInvitation(teamID, adminName,teamName){
         $(".emails-ul").children("li").each(function(){
             emailList.push($(this).val());
         });
+        alert("Parameters  "+" TeamID "+ teamID+"adminName" + adminName+" teamName " +teamName)
       $.ajax({
                 type: "POST",
                 url: "http://192.168.0.24:9000/email/"+teamID,
                 dataType:'json',
                 contentType: false,
                 data:{
-                    teamName: teamName.val(),
-                    adminName:adminName.val()
+                    teamName: teamName,
+                    adminName:adminName
                 },
                 success: function(msg) {
                    
