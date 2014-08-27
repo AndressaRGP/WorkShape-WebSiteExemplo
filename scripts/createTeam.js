@@ -70,8 +70,8 @@ function sendInvitation(teamID, adminName,teamName){
                 dataType:'json',
                 contentType: false,
                 data:{
-                    teamName: teamName,
-                    adminName:adminName
+                    teamName: teamName.val(),
+                    adminName:adminName.val()
                 },
                 success: function(msg) {
                    
