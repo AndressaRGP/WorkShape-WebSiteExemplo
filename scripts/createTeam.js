@@ -62,6 +62,7 @@ function retrieveTeam(){
 function sendInvitation(teamID, adminName,teamName){
         var emailList = [];
         $(".emails-ul").children("li").each(function(){
+            console.log(this)
             emailList.push($(this).text());
         });
         alert("Parameters"+ emailList)
