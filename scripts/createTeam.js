@@ -29,7 +29,6 @@ function createTeam(){
                     $.cookie("sessionID",sessionID)
                     var teamID = msg.teamID;
                     sendInvitation(teamID,_companyName,_teamName);
-                    alert("team supposedly saved")
                 }
           });
         }   
@@ -65,7 +64,6 @@ function sendInvitation(teamID, adminName,teamName){
             console.log(this)
             emailList.push($(this).text());
         });
-        alert("Parameters"+ emailList)
       $.ajax({
                 type: "POST",
                 url: "http://192.168.0.24:9000/email/"+teamID,
@@ -83,7 +81,7 @@ function sendInvitation(teamID, adminName,teamName){
 
 function chooseCharity(){
     var _charityName = $(this).text();
-    $(".charityName").text(_charityName);
+    $(".charityName").val(_charityName);
 }
 
 $(".charity-ul li").onclick = chooseCharity;
