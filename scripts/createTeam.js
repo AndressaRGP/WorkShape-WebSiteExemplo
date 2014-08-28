@@ -79,12 +79,11 @@ function sendInvitation(teamID, adminName,teamName){
           });
 }
 
-function chooseCharity(){
+$(".charity-ul li").click(function(){
     var _charityName = $(this).text();
     $(".charityName").val(_charityName);
-}
+})
 
-$(".charity-ul li").onclick = chooseCharity;
 
 $("#email").keypress(function(event){
     var keycode = (event.keyCode ? event.keyCode : event.which);
