@@ -2,7 +2,7 @@ function createTeam(){
     //Get value of input field with id ="numb"
     var _teamName= document.getElementById("teamName").value;
     var _companyName =document.getElementById("companyName").value; //maybe not, tae it off.
-    var _charityID = document.getElementById("charityID").value;
+    var _charityID = document.getElementById("charityName").value;
     var _teamDescription = document.getElementById("teamDescription").value;
     var _profileImage = document.getElementById("upload-area").value; //PATH of the Image
     
@@ -81,6 +81,12 @@ function sendInvitation(teamID, adminName,teamName){
           });
 }
 
+function chooseCharity(){
+    var _charityName = $(this).text();
+    $(".charityName").text(_charityName);
+}
+
+$(".charity-ul li").onclick = chooseCharity;
 
 $("#email").keypress(function(event){
     var keycode = (event.keyCode ? event.keyCode : event.which);
